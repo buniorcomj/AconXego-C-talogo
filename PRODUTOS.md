@@ -148,3 +148,7 @@ Decisão posterior de 26/10/2026. Para cada novo produto ou revisão de seleçã
 O padrão pretendido para novos produtos continua sendo duas vistas do produto completo, mas é objetivo da seleção final, **não filtro para ocultar originais do usuário**. Esta instrução substitui a orientação anterior de não apresentar fotos com extras como candidatas à escolha. Todo material pode ser apresentado na conferência preliminar; o usuário decide o que aproveitar. Não chamar essa apresentação de fotografias finais prontas para publicação.
 
 Rodada atual: começar pela Bandeja Alongada, dez imagens da galeria na ordem original (1–10), mais a capa oficial (11). Nenhuma descartada ou editada. Aguardar a escolha antes de preparar tratamento. Depois apresentar a Bandeja Cruz também integralmente, sem modificar sua seleção publicada. Originais e mapa de numeração estão localmente em `internal/elongated-tray-review/galeria-completa.json`; arquivos de conferência permanecem fora do conteúdo público.
+
+### Seleção da Bandeja Alongada — decisão do usuário em 26/10/2026
+
+Retirar **2, 3 e 7** da seleção, mantendo os arquivos originais e a numeração da apresentação completa. Permanecem disponíveis **1, 4, 5, 6, 8, 9, 10 e 11**. Isso não significa seleção final ou autorização de edição/publicação das restantes. Nenhum recorte ou tratamento foi feito. Aguardar a próxima escolha; não renumerar nem excluir arquivos.

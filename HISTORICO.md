@@ -70,3 +70,7 @@ Usuário esclareceu: cada fotografia deve mostrar somente bandeja e porta-velas 
 ## 26/10/2026 — novo procedimento: galeria original completa antes da seleção
 
 Por instrução do usuário, não filtrar nem descartar antecipadamente fotos por acessórios. Apresentar todas as imagens públicas originais do produto exato, numeradas e com links acessíveis; aguardar escolha antes de recortes, edições ou tratamento. Depois avaliar juntos o tratamento e obter aprovação final antes de publicar/substituir. Essa regra substitui o veto anterior a apresentar candidatos com extras; não autoriza publicar fotos sem aprovação. Começar pela Alongada: dez imagens da galeria, incluindo técnicas/variantes/composição, mais capa oficial como item 11. Nenhuma edição ou mudança no catálogo. Em seguida, apresentar os originais da Cruz; manter as cinco fotos da Pomba da Paz.
+
+## 26/10/2026 — primeira exclusão na seleção da Bandeja Alongada
+
+Usuário retirou as imagens 2, 3 e 7 da seleção. Restam 1, 4, 5, 6, 8, 9, 10 e 11, mantendo a numeração original. Exclusão apenas da seleção, sem apagar arquivos, alterar fotos, cadastrar definitivamente ou publicar o produto. Escolha final e tratamentos seguem pendentes.
