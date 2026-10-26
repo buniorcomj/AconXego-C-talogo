@@ -34,3 +34,13 @@ Se precisar corrigir uma versão anterior, preservar a linha original e acrescen
 - Galerias de duas e cinco imagens, botões, setas e Escape verificados em ambas as larguras.
 - Sete imagens conferidas byte a byte com o commit publicado e com os SHA-256 do cadastro; nenhuma alterada.
 - A verificação de persistência remota dos novos documentos só pode ser concluída após push autorizado. Até lá, os novos commits são apenas locais.
+
+## 26/10/2026 — v0.5.0 preparada, não publicada
+
+- Regras permanentes: finalizar Religiosos antes dos Natalinos; categorias principais RELIGIOSOS/NATALINOS e quatro grupos religiosos ordenados pelo cadastro.
+- Cadastro migrado do formato 1 ao 2, mantendo IDs, nomes, descrições, situações, sete imagens e metadados existentes. Acrescentadas subcategorias, ordens hierárquicas, tipo individual, participação potencial em kits e componentes vazios.
+- Bandeja Cruz organizada como base em porta-terços/bandejas/porta-velas; Pomba da Paz como imagem pequena. Nenhum kit ou preço criado. Fluxo futuro de composição explícita por IDs validado apenas em testes temporários.
+- Recuperadas dez imagens do produto exato Bandeja Alongada com Porta-Velas; propostas duas candidatas (principal com porta-vela e vista superior). Composição com outras peças, variantes lisas e imagens técnicas não incluídas na proposta. WebP sem perdas preparado localmente; aprovação visual e licença comercial continuam pendentes. Cadastro definitivo e saída pública mantêm somente os dois produtos aprovados.
+- Não houve push desta etapa. Commits locais de v0.4.0 também continuam pendentes; verificar o escopo completo antes de qualquer envio à main.
+
+Validação local desta etapa: dez testes passaram; o HTML gerado é idêntico ao da organização anterior; campos preexistentes do cadastro e sete imagens preservados byte a byte. A Bandeja Alongada não aparece em `dist`. O commit de regras/estrutura é local; as duas imagens candidatas do novo produto ainda não foram commitadas nem enviadas.

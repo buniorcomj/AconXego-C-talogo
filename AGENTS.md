@@ -11,3 +11,6 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 - Atualizar documentação e histórico; commits em etapas e com arquivos revisados. Não apagar trabalho anterior.
 - Informar alterações e obter autorização antes de push/deploy; main está integrada à Vercel. Não confundir aprovação antiga com autorização permanente.
 - Não declarar persistência no GitHub ou implantação concluída sem verificá-las.
+
+- Finalizar Religiosos antes dos Natalinos. Ordem por cadastro: porta-terços/bandejas/porta-velas → imagens pequenas → imagens grandes → kits religiosos.
+- Formato 2: cada produto tem subcategoria e possibilidade de participar de kits. Só preparar referências; não criar kits ou preços automaticamente, nem carrinho/pagamento. Preservar IDs e imagens.

@@ -1,13 +1,17 @@
 {
-  "versao": 1,
+  "versao": 2,
   "categorias": [
     {
       "id": "religiosos",
-      "nome": "Artigos Religiosos"
+      "nome": "Artigos Religiosos",
+      "ordem": 10,
+      "principal": "RELIGIOSOS"
     },
     {
       "id": "natalinos",
-      "nome": "Coleção Natalina"
+      "nome": "Coleção Natalina",
+      "ordem": 20,
+      "principal": "NATALINOS"
     }
   ],
   "produtos": [
@@ -52,7 +56,14 @@
         "pagina_origem": "https://platform.stlflix.com/pt-BR/product/cross-tray-and-candle-holder",
         "publicado_em": "2026-10-26",
         "observacoes": "Um produto; primeira foto é a principal. Não incluir a composição com pomba na galeria deste produto. Não presumir vela ou acessórios incluídos."
-      }
+      },
+      "subcategoria": "porta-tercos-bandejas-porta-velas",
+      "tipo": "individual",
+      "participacao_kits": {
+        "permitida": true,
+        "papel": "base"
+      },
+      "componentes": []
     },
     {
       "id": "pomba-da-paz",
@@ -137,7 +148,40 @@
         "pagina_origem": "https://platform.stlflix.com/pt-BR/product/peace-dove-statue",
         "publicado_em": "2026-10-26",
         "observacoes": "Cinco imagens aprovadas. Imagem técnica não selecionada. A origem oficial não comprova fotografia física em vez de renderização."
-      }
+      },
+      "subcategoria": "imagens-pequenas",
+      "tipo": "individual",
+      "participacao_kits": {
+        "permitida": true,
+        "papel": "imagem"
+      },
+      "componentes": []
+    }
+  ],
+  "subcategorias": [
+    {
+      "id": "porta-tercos-bandejas-porta-velas",
+      "categoria": "religiosos",
+      "nome": "Porta-terços, bandejas e porta-velas",
+      "ordem": 10
+    },
+    {
+      "id": "imagens-pequenas",
+      "categoria": "religiosos",
+      "nome": "Imagens religiosas pequenas",
+      "ordem": 20
+    },
+    {
+      "id": "imagens-grandes",
+      "categoria": "religiosos",
+      "nome": "Imagens religiosas grandes",
+      "ordem": 30
+    },
+    {
+      "id": "kits-religiosos",
+      "categoria": "religiosos",
+      "nome": "Kits religiosos",
+      "ordem": 40
     }
   ]
 }

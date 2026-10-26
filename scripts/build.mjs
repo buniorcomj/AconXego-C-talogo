@@ -25,14 +25,24 @@ function details(product) {
 
 export async function buildCatalog(root = projectRoot) {
   const catalog = JSON.parse(await readFile(path.join(root, 'dados/produtos.json'), 'utf8'));
-  assert(catalog.versao === 1, 'Versão desconhecida do cadastro');
+  assert(catalog.versao === 2, 'Versão desconhecida do cadastro');
   assert(Array.isArray(catalog.categorias) && catalog.categorias.length > 0, 'Categorias obrigatórias');
   assert(Array.isArray(catalog.produtos), 'Lista de produtos obrigatória');
   const categories = new Map();
   for (const category of catalog.categorias) {
     assert(typeof category.id === 'string' && slug.test(category.id) && !categories.has(category.id), 'Categoria inválida ou duplicada');
     commercial(category.nome, 'categoria.nome');
+    assert(Number.isInteger(category.ordem) && category.ordem >= 0, 'Ordem de categoria inválida');
     categories.set(category.id, category);
+  }
+  assert(Array.isArray(catalog.subcategorias), 'Subcategorias obrigatórias');
+  const subcategories = new Map();
+  for (const subcategory of catalog.subcategorias) {
+    assert(typeof subcategory.id === 'string' && slug.test(subcategory.id) && !subcategories.has(subcategory.id), 'Subcategoria inválida ou duplicada');
+    assert(categories.has(subcategory.categoria), 'Categoria da subcategoria inexistente');
+    commercial(subcategory.nome, 'subcategoria.nome');
+    assert(Number.isInteger(subcategory.ordem) && subcategory.ordem >= 0, 'Ordem de subcategoria inválida');
+    subcategories.set(subcategory.id, subcategory);
   }
   const ids = new Set();
   const assets = new Map();
@@ -41,6 +51,11 @@ export async function buildCatalog(root = projectRoot) {
     assert(typeof product.id === 'string' && slug.test(product.id) && !ids.has(product.id), 'ID de produto inválido ou duplicado');
     ids.add(product.id);
     assert(categories.has(product.categoria), `Categoria inexistente: ${product.id}`);
+    assert(subcategories.has(product.subcategoria) && subcategories.get(product.subcategoria).categoria === product.categoria, `Subcategoria incompatível: ${product.id}`);
+    assert(['individual', 'kit'].includes(product.tipo), `Tipo inválido: ${product.id}`);
+    assert(typeof product.participacao_kits?.permitida === 'boolean' && ['base', 'imagem', 'outro'].includes(product.participacao_kits?.papel), `Participação em kits inválida: ${product.id}`);
+    assert(Array.isArray(product.componentes), `Componentes ausentes: ${product.id}`);
+    assert(product.tipo !== 'individual' || product.componentes.length === 0, `Produto individual com composição: ${product.id}`);
     assert(['ativo', 'oculto', 'descontinuado'].includes(product.situacao), `Situação inválida: ${product.id}`);
     assert(Number.isInteger(product.ordem) && product.ordem >= 0, `Ordem inválida: ${product.id}`);
     commercial(product.nome, `${product.id}.nome`);
@@ -62,8 +77,27 @@ export async function buildCatalog(root = projectRoot) {
       assets.set(image.arquivo, source);
     }
   }
-  const active = catalog.produtos.filter(product => product.situacao === 'ativo').sort((a, b) => a.ordem - b.ordem || a.id.localeCompare(b.id));
-  const sections = catalog.categorias.map(category => {
+  // Eligibility never creates a kit: only an explicitly registered kit has components.
+  const byId = new Map(catalog.produtos.map(product => [product.id, product]));
+  for (const product of catalog.produtos.filter(item => item.tipo === 'kit')) {
+    assert(product.componentes.length >= 2, `Kit sem composição explícita: ${product.id}`);
+    const seen = new Set();
+    for (const component of product.componentes) {
+      const item = byId.get(component.produto_id);
+      assert(item && item.id !== product.id && item.tipo === 'individual' && item.participacao_kits.permitida, `Componente inválido: ${product.id}`);
+      assert(item.categoria === product.categoria, `Componente de outra categoria: ${product.id}`);
+      assert(!seen.has(item.id) && Number.isInteger(component.quantidade) && component.quantidade > 0, `Quantidade/componente duplicado inválido: ${product.id}`);
+      seen.add(item.id);
+    }
+  }
+  const active = catalog.produtos.filter(product => product.situacao === 'ativo').sort((a, b) =>
+    categories.get(a.categoria).ordem - categories.get(b.categoria).ordem ||
+    a.categoria.localeCompare(b.categoria) ||
+    subcategories.get(a.subcategoria).ordem - subcategories.get(b.subcategoria).ordem ||
+    a.subcategoria.localeCompare(b.subcategoria) ||
+    a.ordem - b.ordem || a.id.localeCompare(b.id));
+  const sortedCategories = [...catalog.categorias].sort((a, b) => a.ordem - b.ordem || a.id.localeCompare(b.id));
+  const sections = sortedCategories.map(category => {
     const products = active.filter(product => product.categoria === category.id);
     if (!products.length) return `<section id="${category.id}" class="empty-note" aria-label="${escape(category.nome)}">${escape(category.nome)}: imagens e produtos serão incluídos após aprovação.</section>`;
     return `<section id="${category.id}" aria-labelledby="collection-${category.id}"><div class="section-head"><h2 id="collection-${category.id}">${escape(category.nome)}</h2><span>Prévia • ${products.length} ${products.length === 1 ? 'produto' : 'produtos'}</span></div>\n${products.map((product, i) => card(product, category, i)).join('\n')}</section>`;

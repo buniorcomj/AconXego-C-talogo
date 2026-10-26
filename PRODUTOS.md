@@ -15,10 +15,10 @@ Categorias: `religiosos` → Artigos Religiosos; `natalinos` → Coleção Natal
 
 ## Estrutura do cadastro
 
-- `versao`: versão do formato do cadastro, atualmente `1`; não é a versão da aplicação.
+- `versao`: versão do formato do cadastro, atualmente `2`; não é a versão da aplicação.
 - `categorias`: IDs estáveis e nomes comerciais. O menu das duas categorias atuais está no template.
 - `produtos`: todos os registros, inclusive ocultos e descontinuados.
-- Produto: `id` único em letras minúsculas/números/hífens; `nome`; `categoria` (ID existente); `descricao`; `situacao`; `ordem` inteira; `imagens`; `interno`.
+- Produto: `id` único em letras minúsculas/números/hífens; `nome`; `categoria` (ID existente); `descricao`; `subcategoria`; `situacao`; `ordem` inteira; `tipo`; `participacao_kits`; `componentes`; `imagens`; `interno`.
 - `imagens`: lista ordenada. A primeira é a principal da vitrine. Cada imagem contém `arquivo` relativo a `demo/`, `alt`, `rotulo`, `largura`, `altura`, e metadados `interno`.
 - `interno` do produto: página de origem, data de publicação e observações. Não aparece no HTML.
 - `interno` da imagem: URL exata de origem, recuperação/aprovação (`AAAA-MM-DD`), SHA-256 do WebP e nota de licença. Não aparece no HTML.
@@ -43,7 +43,7 @@ O build valida caminhos locais, cabeçalho WebP, hash, categoria, estado, IDs, d
 - **Editar**: mudar campos necessários no mesmo registro; registrar mudança no histórico. Para substituir uma imagem, obter aprovação e conservar a anterior no Git. Não remover arquivos antigos sem autorização.
 - **Excluir definitivamente**: somente mediante autorização explícita, nunca como mecanismo comum de ocultação.
 
-`ordem` controla a sequência dentro da categoria; em empate, o ID desempata. Só ativos entram no HTML e têm imagens copiadas. URLs antigas em implantações anteriores não são revogadas por uma ocultação.
+A sequência usa `ordem` da categoria, `ordem` da subcategoria e `ordem` do produto dentro do grupo; IDs desempatarão ordens iguais. Só ativos entram no HTML e têm imagens copiadas. URLs antigas em implantações anteriores não são revogadas por uma ocultação.
 
 ## Conferências antes de publicar
 
@@ -53,3 +53,31 @@ O build valida caminhos locais, cabeçalho WebP, hash, categoria, estado, IDs, d
 - Nenhum arquivo do cadastro, URL de origem, documento interno, custo ou dado técnico em `dist`.
 - Fotografias dos produtos não alterados idênticas aos hashes já registrados.
 - Commit revisado, autorização de push/publicação confirmada e implantação verificada conforme DEPLOYMENT.md.
+
+## Subcategorias e prioridade de cadastro (26/10/2026)
+
+Concluir **RELIGIOSOS** antes de iniciar **NATALINOS**. Não criar produtos, tamanhos ou variantes apenas para completar grupos.
+
+| Ordem | ID de subcategoria | Grupo | Produtos existentes |
+| --- | --- | --- | --- |
+| 10 | `porta-tercos-bandejas-porta-velas` | Porta-terços, bandejas e porta-velas | Bandeja Cruz com Porta-Velas |
+| 20 | `imagens-pequenas` | Imagens religiosas pequenas | Pomba da Paz |
+| 30 | `imagens-grandes` | Imagens religiosas grandes | Nenhum |
+| 40 | `kits-religiosos` | Kits religiosos | Nenhum; não criar automaticamente |
+
+Categorias e subcategorias têm IDs e `ordem` próprios no JSON. Toda subcategoria declara sua categoria. Cada produto precisa de uma subcategoria válida da mesma categoria; produtos futuros seguem a ordenação do cadastro sem listas fixas no código. As categorias principais são registradas como RELIGIOSOS e NATALINOS, preservando os rótulos atuais da vitrine.
+
+### Participação em kits
+
+- `tipo: "individual"` para os produtos atuais.
+- `participacao_kits.permitida: true` significa possibilidade futura, não aprovação de kit.
+- `participacao_kits.papel`: `base` para bandeja/porta-terço; `imagem` para imagem; `outro` quando necessário.
+- `componentes: []` em todo produto individual. Não preencher combinações por conta própria.
+- Kit futuro é outro produto, com ID, categoria/subcategoria, fotos e composição expressamente aprovados. Usar `tipo: "kit"` e `componentes: [{"produto_id": "id-existente", "quantidade": 1}, ...]`. Todos os IDs devem existir, ser individuais, elegíveis e da mesma categoria; não incluir o próprio kit nem kits aninhados. O sistema valida, mas não cria esses registros.
+- Preços e combinações serão definidos posteriormente. Não gerar valores automáticos, fotografias de conjuntos ou funcionalidades de loja.
+
+### Próximo rascunho, sem aprovação de imagens
+
+**Bandeja Alongada com Porta-Velas** (`bandeja-alongada`), Religiosos → Porta-terços, bandejas e porta-velas; base potencial para kits, sem combinação. Descrição proposta: “Bandeja alongada com acabamento canelado e porta-velas para compor a decoração.”
+
+Duas imagens propostas: conjunto bandeja/porta-vela como principal, bandeja vista de cima como secundária. Composição com outras imagens religiosas, variantes lisas e imagens técnicas não selecionadas. Não supor inclusão de vela LED ou de outros acessórios. Rascunho local e origem em `internal/elongated-tray-review/`; candidatos WebP `bandeja-alongada-principal.webp` e `bandeja-alongada-secundaria.webp`. Não entram no cadastro definitivo, commit de produto ou saída pública antes de aprovação. Não inventar `aprovada_em`.

@@ -64,3 +64,11 @@ Na nova sessão, abrir o checkout provisionado e os documentos versionados. Em o
 Para conferir persistência remota, após push autorizado, comparar o SHA de `git ls-remote origin refs/heads/main`, o commit enviado e os caminhos na API/árvore do GitHub. Uma revisão local ou `git add` não comprova versionamento remoto. Material ignorado em `internal/` não será restaurado por clone; as origens selecionadas essenciais estão no cadastro versionado. Não prometer recuperação de arquivos nunca enviados.
 
 Reverter erro com um novo commit revisado (por exemplo revert após autorização), não apagando histórico ou resetando produção. Para recuperar dados, ler `git show <commit>:<caminho>` ou restaurar apenas o arquivo necessário preservando mudanças locais.
+
+## Prioridade e agrupamento permanentes (26/10/2026)
+
+Finalizar Religiosos antes de cadastrar Natalinos. Categorias principais RELIGIOSOS/NATALINOS; ordem religiosa: (1) porta-terços, bandejas e porta-velas, (2) imagens pequenas, (3) imagens grandes, (4) kits religiosos. Consultar o cadastro formato 2 e PRODUTOS.md; não colocar essa sequência em listas de produtos no código. Ordem de categoria/subcategoria/produto controla a apresentação.
+
+Todo produto conserva ID próprio, categoria, subcategoria, fotografias e campos de participação em kits. Imagens pequenas podem ser combinadas futuramente com porta-terços; registrar apenas elegibilidade/papel. Não criar kits, composições, preços ou imagens de conjuntos automaticamente. Combinações e preços dependem de instrução futura do usuário. Kit futuro exige registro e aprovação próprios, referenciando componentes por IDs. Não adicionar carrinho, pagamento ou loja virtual nesta etapa.
+
+Há rascunho da Bandeja Alongada com Porta-Velas aguardando conferência em `internal/elongated-tray-review/product-draft.json`; não promover à publicação sem aprovação. Preservar também os commits locais da organização ainda não enviados. Antes de push, apresentar o conjunto completo de commits pendentes, não apenas o novo produto.

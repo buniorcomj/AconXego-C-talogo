@@ -72,3 +72,24 @@ As sete imagens aprovadas e seus metadados necessários estão versionados, perm
 7. Após autorização, enviar ao repositório existente, acompanhar a Vercel e validar a URL pública. Registrar o resultado, sem confundir testes locais com implantação concluída.
 
 Publicação atual deve continuar intacta enquanto esta organização aguarda revisão. Não aplicar reset, force push, exclusões ou reconstrução do projeto para “limpar” histórico.
+
+## Organização religiosa e evolução — decisão de 26/10/2026
+
+As categorias principais são **RELIGIOSOS** e **NATALINOS**. Os rótulos atuais da vitrine (Artigos Religiosos e Coleção Natalina) foram preservados. Concluir os cadastros religiosos antes de iniciar os natalinos. Não acrescentar produtos natalinos apenas para preencher a categoria.
+
+Dentro de Religiosos, a sequência é definida em `subcategorias` no cadastro:
+
+1. Porta-terços, bandejas e porta-velas.
+2. Imagens religiosas pequenas.
+3. Imagens religiosas grandes.
+4. Kits religiosos.
+
+O cadastro usa formato `versao: 2`. Categorias e subcategorias possuem `ordem`; cada produto tem ID estável, categoria, subcategoria, imagens, situação e ordem dentro do grupo. A sequência é **ordem da categoria → ordem da subcategoria → ordem do produto**, com IDs como desempate. Alterar essas ordens no cadastro dispensa mudança no código do site. Os nomes dos grupos são organizacionais; não implicam medidas comerciais inventadas. A Pomba da Paz foi organizada em pequenas (a fonte declara aproximadamente 9 cm, dimensão não publicada como oferta); a bandeja em bases/acessórios.
+
+Cada produto individual tem `tipo: "individual"`, `participacao_kits` com `permitida` e `papel` (`base`, `imagem` ou `outro`), e `componentes: []`. Bandejas/porta-terços podem ser bases e imagens pequenas podem participar futuramente. **Elegibilidade não é combinação aprovada** e não produz novos produtos. Não há kits reais cadastrados ou preços definidos.
+
+Um futuro kit só existirá mediante cadastro explícito de produto `tipo: "kit"`, subcategoria Kits religiosos, ID próprio, fotografias aprovadas e `componentes` com `produto_id` e `quantidade`, além da aprovação das combinações e valores pelo usuário. Os componentes apontam para IDs existentes e elegíveis, sem copiar/apagar seus registros. Não gerar fotos de composição, preço somado, descontos, kits automáticos, carrinho, pagamento ou estoque por inferência. O build apenas valida registros expressamente cadastrados; não calcula preços nem implementa loja virtual.
+
+Próximo item em conferência: **Bandeja Alongada com Porta-Velas**, em Porta-terços, bandejas e porta-velas. Rascunho e fontes locais em `internal/elongated-tray-review/product-draft.json`; duas imagens WebP candidatas em `demo/assets/`, ainda não aprovadas nem incluídas no cadastro definitivo ou em `dist`. Não publicar nem incluir em kit até aprovação. Arquivos ignorados de conferência não estão no GitHub; após aprovação, promover o registro e imagens necessários para o cadastro versionado.
+
+As regras desta etapa e a organização v0.4.0 continuam preparadas localmente enquanto o envio à main aguarda autorização; não confundir commits locais com persistência remota.

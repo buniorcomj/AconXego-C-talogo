@@ -63,7 +63,9 @@ test('descontinuados e catálogo sem ativos preservam registros e não publicam 
 test('edição, categoria e ordenação vêm do cadastro; textos são escapados', async t => {
   const f = await fixture(t);
   f.catalog.produtos[1].nome = 'Pomba & Paz <especial>';
+  f.catalog.subcategorias.push({id:'natalinos-teste',categoria:'natalinos',nome:'Categoria temporária de teste',ordem:10});
   f.catalog.produtos[1].categoria = 'natalinos';
+  f.catalog.produtos[1].subcategoria = 'natalinos-teste';
   f.catalog.produtos[0].descricao = 'Descrição revisada para o teste.';
   await f.save();
   await buildCatalog(f.directory);
@@ -72,6 +74,8 @@ test('edição, categoria e ordenação vêm do cadastro; textos são escapados'
   assert.match(html, /Descrição revisada para o teste/);
   assert.match(html, /<section id="natalinos" aria-labelledby="collection-natalinos"/);
   f.catalog.produtos[1].categoria = 'religiosos';
+  f.catalog.produtos[1].subcategoria = 'imagens-pequenas';
+  f.catalog.subcategorias.find(s => s.id === 'imagens-pequenas').ordem = 0;
   f.catalog.produtos[1].ordem = 0;
   await f.save();
   await buildCatalog(f.directory);
@@ -113,4 +117,56 @@ test('adicionar produto usa o cadastro e as imagens locais; ocultar não deixa a
   f.catalog.produtos[1].situacao = 'oculto'; await f.save();
   assert.deepEqual(await buildCatalog(f.directory), { products: 1, images: 2 });
   assert.equal((await readdir(path.join(f.directory, 'dist/assets'))).length, 2);
+});
+
+test('ordenação hierárquica é controlada pelo cadastro, independentemente da ordem da lista', async t => {
+  const f = await fixture(t);
+  f.catalog.produtos.reverse();
+  f.catalog.produtos.find(p => p.id === 'pomba-da-paz').ordem = 0;
+  await f.save(); await buildCatalog(f.directory);
+  let html = await f.html();
+  assert.ok(html.indexOf('id="bandeja-cruz"') < html.indexOf('id="pomba-da-paz"'));
+  f.catalog.subcategorias.find(s => s.id === 'imagens-pequenas').ordem = 5;
+  f.catalog.categorias.find(c => c.id === 'natalinos').ordem = 0;
+  await f.save(); await buildCatalog(f.directory);
+  html = await f.html();
+  assert.ok(html.indexOf('id="pomba-da-paz"') < html.indexOf('id="bandeja-cruz"'));
+  assert.ok(html.indexOf('id="natalinos"') < html.indexOf('id="religiosos"'));
+});
+
+test('possibilidade de participar de kits não cria combinações ou preços automaticamente', async t => {
+  const f = await fixture(t);
+  assert.ok(f.catalog.produtos.every(p => p.participacao_kits.permitida));
+  assert.ok(f.catalog.produtos.every(p => p.tipo === 'individual' && p.componentes.length === 0));
+  await f.save();
+  assert.deepEqual(await buildCatalog(f.directory), { products: 2, images: 7 });
+  assert.doesNotMatch(await f.html(), /componentes|participacao_kits|produto_id|["']preco["']|R\$\s*\d/);
+});
+
+test('kit futuro depende de registro explícito e valida identificação dos componentes', async t => {
+  const f = await fixture(t);
+  const kit = structuredClone(f.catalog.produtos[0]);
+  kit.id = 'kit-de-teste'; kit.nome = 'Kit de teste'; kit.tipo = 'kit'; kit.subcategoria = 'kits-religiosos';
+  kit.componentes = [{produto_id:'bandeja-cruz',quantidade:1},{produto_id:'pomba-da-paz',quantidade:1}];
+  f.catalog.produtos.push(kit); await f.save();
+  assert.deepEqual(await buildCatalog(f.directory), { products: 3, images: 7 });
+  kit.componentes[1].produto_id = 'nao-existe'; await f.save();
+  await assert.rejects(buildCatalog(f.directory), /Componente inválido/);
+  kit.componentes[1].produto_id = 'pomba-da-paz';
+  f.catalog.produtos[1].participacao_kits.permitida = false; await f.save();
+  await assert.rejects(buildCatalog(f.directory), /Componente inválido/);
+});
+
+test('subcategoria ausente, duplicada ou de outra categoria é rejeitada', async t => {
+  const f = await fixture(t);
+  const original = structuredClone(f.catalog);
+  for (const change of [
+    c => { delete c.produtos[0].subcategoria; },
+    c => { c.subcategorias.push(structuredClone(c.subcategorias[0])); },
+    c => { c.produtos[0].categoria = 'natalinos'; },
+    c => { c.produtos[0].componentes = [{produto_id:'pomba-da-paz',quantidade:1}]; },
+  ]) {
+    Object.assign(f.catalog, structuredClone(original)); change(f.catalog); await f.save();
+    await assert.rejects(buildCatalog(f.directory));
+  }
 });
