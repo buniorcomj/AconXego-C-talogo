@@ -1,5 +1,14 @@
 # AconXego — continuidade do projeto
 
+## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026
+
+Após revisar todos os originais e excluir 2, 3, 7, 8, 9, 10 e 11, o usuário autorizou publicar as **quatro imagens 1, 4, 5 e 6**, nessa ordem, sem recortes ou edições. A foto 1 é a principal; as demais aparecem nos detalhes. Essa escolha específica de quatro fotos prevalece, para este produto, sobre as propostas e bloqueios anteriores e sobre o padrão inicial de duas. Não reduzir ou substituir a seleção automaticamente.
+
+Composição comercial: somente bandeja e porta-velas. Vela LED visível na foto 1 é de ambientação e não integra a oferta. Descrição comercial explicita essa exclusão. Os dois produtos anteriores permanecem intactos; Pomba da Paz mantém cinco fotografias. Origens e numeração original constam somente dos campos internos do cadastro, nunca da publicação.
+
+Cadastro definitivo atualizado para três produtos e onze imagens. Envio/implantação desta inclusão ainda serão verificados; consultar o último registro de HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
+
+
 Atualizado em 26/10/2026 (America/Sao_Paulo). Organização e regras **v0.5.0 publicadas**, commit funcional `82978c3`, com os dois produtos e as sete imagens da v0.3.0 preservados. Implantação e URL pública verificadas em 26/10/2026; consultar HISTORICO.md para atualizações.
 
 ## Identidade e objetivo
@@ -35,7 +44,7 @@ Site estático em HTML, CSS e JavaScript nativos; Node.js para build e testes. N
 
 ## Produtos e regras comerciais
 
-Ativos: Bandeja Cruz com Porta-Velas (duas imagens) e Pomba da Paz (cinco imagens), em **Artigos Religiosos**. **Coleção Natalina** está preparada, sem produtos aprovados. Produtos citados em conversas antigas que não constam do cadastro não são produtos publicados.
+Ativos no cadastro: Bandeja Cruz com Porta-Velas (duas imagens), Bandeja Alongada com Porta-Velas (quatro imagens) e Pomba da Paz (cinco imagens), em **Artigos Religiosos**. **Coleção Natalina** está preparada, sem produtos aprovados. Produtos citados em conversas antigas que não constam do cadastro não são produtos publicados.
 
 - Não inventar produtos, preços, tamanhos, materiais, disponibilidade, acessórios incluídos ou características.
 - Não substituir imagens por similares nem gerar imagens de produto com IA. Não alterar cores, formato ou detalhes da peça. Conversão WebP sem perdas e sem recorte foi adotada para preservar os pixels.
@@ -59,7 +68,7 @@ O build lê o cadastro no servidor e seleciona campos comerciais explicitamente.
 
 **O repositório GitHub é público.** “Interno” aqui significa fora do catálogo e da saída pública da Vercel, não confidencial no GitHub. URLs de origem no cadastro versionado podem ser lidas por quem acessa o repositório. Nunca inserir segredos, credenciais, dados de clientes, custos ou margens nele. Dados realmente confidenciais exigem armazenamento privado ou mudança de visibilidade autorizada. `.gitignore`, `noindex` e `.vercelignore` não fornecem autenticação.
 
-As sete imagens aprovadas e seus metadados necessários estão versionados, permitindo reconstruir o catálogo sem histórico de chat. Os originais não selecionados em `internal/` permanecem locais; não foram apagados e não se deve anunciar backup deles no GitHub. Fazer backup privado autorizado se passarem a ser necessários.
+As sete imagens anteriores permanecem versionadas; quatro imagens da Alongada aprovadas serão incluídas neste envio, com seus metadados. Os dados essenciais estão preservados, permitindo reconstruir o catálogo sem histórico de chat. Os originais não selecionados em `internal/` permanecem locais; não foram apagados e não se deve anunciar backup deles no GitHub. Fazer backup privado autorizado se passarem a ser necessários.
 
 ## Fluxo de manutenção
 

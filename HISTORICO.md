@@ -78,3 +78,7 @@ Usuário retirou as imagens 2, 3 e 7 da seleção. Restam 1, 4, 5, 6, 8, 9, 10 e
 ## 26/10/2026 — segunda exclusão na seleção da Bandeja Alongada
 
 Usuário retirou também 8, 9, 10 e 11; restam 1, 4, 5 e 6. Mantidos originais e numeração. Nenhuma edição, exclusão física, mudança na vitrine ou publicação.
+
+## 26/10/2026 — v0.6.0, publicação da Bandeja Alongada autorizada
+
+Após exclusões explícitas, o usuário autorizou publicar a seleção restante 1, 4, 5 e 6, sem editar fotos. Cadastro individual Bandeja Alongada com Porta-Velas em Religiosos → Porta-terços, bandejas e porta-velas; ordem 2, depois da Bandeja Cruz e antes das imagens pequenas. Principal 1, quatro imagens na galeria. Essa autorização específica supera as seleções pendentes e conserva os quatro originais, sem impor duas imagens por automatismo. Apenas bandeja e porta-velas vendidos; descrição explicita vela LED não incluída. Não foram criados kits, preços, carrinho ou pagamentos. Bandeja Cruz e cinco fotos da Pomba da Paz preservadas. Dez testes passaram; build gera três produtos e onze WebP, sem origens ou documentos públicos. Commit/push e resultado Vercel serão verificados a seguir.

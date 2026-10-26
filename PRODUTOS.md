@@ -1,5 +1,14 @@
 # Produtos AconXego
 
+## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026
+
+Após revisar todos os originais e excluir 2, 3, 7, 8, 9, 10 e 11, o usuário autorizou publicar as **quatro imagens 1, 4, 5 e 6**, nessa ordem, sem recortes ou edições. A foto 1 é a principal; as demais aparecem nos detalhes. Essa escolha específica de quatro fotos prevalece, para este produto, sobre as propostas e bloqueios anteriores e sobre o padrão inicial de duas. Não reduzir ou substituir a seleção automaticamente.
+
+Composição comercial: somente bandeja e porta-velas. Vela LED visível na foto 1 é de ambientação e não integra a oferta. Descrição comercial explicita essa exclusão. Os dois produtos anteriores permanecem intactos; Pomba da Paz mantém cinco fotografias. Origens e numeração original constam somente dos campos internos do cadastro, nunca da publicação.
+
+Cadastro definitivo atualizado para três produtos e onze imagens. Envio/implantação desta inclusão ainda serão verificados; consultar o último registro de HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
+
+
 A fonte oficial e editável é **`dados/produtos.json`**, versionada no Git. Este documento explica o cadastro; não manter uma segunda lista divergente. Origens por fotografia, datas de aprovação e SHA-256 estão somente no cadastro de build, nunca no HTML público.
 
 ## Produtos existentes
@@ -7,9 +16,10 @@ A fonte oficial e editável é **`dados/produtos.json`**, versionada no Git. Est
 | ID estável | Nome | Categoria | Situação | Descrição | Imagens locais em `demo/assets/` |
 | --- | --- | --- | --- | --- | --- |
 | `bandeja-cruz` | Bandeja Cruz com Porta-Velas | Artigos Religiosos | ativo | Uma peça para compor a decoração religiosa. | `bandeja-cruz-principal.webp` e `bandeja-cruz-secundaria.webp` |
+| `bandeja-alongada` | Bandeja Alongada com Porta-Velas | Artigos Religiosos | ativo | Bandeja alongada com porta-velas para compor a decoração. Conjunto composto somente por bandeja e porta-velas; vela LED não incluída. | `bandeja-alongada-01.webp`, `bandeja-alongada-04.webp`, `bandeja-alongada-05.webp`, `bandeja-alongada-06.webp` |
 | `pomba-da-paz` | Pomba da Paz | Artigos Religiosos | ativo | Um símbolo de paz para compor a decoração e presentear com significado. | `pomba-da-paz-01.webp` até `pomba-da-paz-05.webp` |
 
-Os sete WebP têm 1080 × 1350 pixels. Sua aprovação ocorreu em 26/10/2026. A ordem acima e as descrições são as da publicação v0.3.0. Não há outros produtos cadastrados. Não supor inclusão de vela ou outros acessórios na bandeja. A Pomba da Paz é independente da bandeja.
+Os onze WebP têm 1080 × 1350 pixels. Aprovações e autorização de publicação registradas em 26/10/2026. Os produtos anteriores conservam suas descrições e imagens; a Alongada entra com seleção própria de quatro fotografias. Não supor inclusão de vela ou outros acessórios na bandeja. A Pomba da Paz é independente da bandeja.
 
 Categorias: `religiosos` → Artigos Religiosos; `natalinos` → Coleção Natalina. Não criar produtos natalinos sem material real e aprovação.
 
@@ -76,7 +86,7 @@ Categorias e subcategorias têm IDs e `ordem` próprios no JSON. Toda subcategor
 - Kit futuro é outro produto, com ID, categoria/subcategoria, fotos e composição expressamente aprovados. Usar `tipo: "kit"` e `componentes: [{"produto_id": "id-existente", "quantidade": 1}, ...]`. Todos os IDs devem existir, ser individuais, elegíveis e da mesma categoria; não incluir o próprio kit nem kits aninhados. O sistema valida, mas não cria esses registros.
 - Preços e combinações serão definidos posteriormente. Não gerar valores automáticos, fotografias de conjuntos ou funcionalidades de loja.
 
-### Próximo rascunho, bloqueado por falta de duas fotografias adequadas
+### Histórico da proposta inicial (superado pela autorização de publicação acima)
 
 **Bandeja Alongada com Porta-Velas** (`bandeja-alongada`), Religiosos → Porta-terços, bandejas e porta-velas; base potencial para kits, sem combinação. Descrição proposta preservada: “Bandeja alongada com acabamento canelado e porta-velas para compor a decoração.”
 

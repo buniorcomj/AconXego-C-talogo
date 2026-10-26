@@ -1,5 +1,14 @@
 # Instruções para continuar o projeto em qualquer sessão
 
+## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026
+
+Após revisar todos os originais e excluir 2, 3, 7, 8, 9, 10 e 11, o usuário autorizou publicar as **quatro imagens 1, 4, 5 e 6**, nessa ordem, sem recortes ou edições. A foto 1 é a principal; as demais aparecem nos detalhes. Essa escolha específica de quatro fotos prevalece, para este produto, sobre as propostas e bloqueios anteriores e sobre o padrão inicial de duas. Não reduzir ou substituir a seleção automaticamente.
+
+Composição comercial: somente bandeja e porta-velas. Vela LED visível na foto 1 é de ambientação e não integra a oferta. Descrição comercial explicita essa exclusão. Os dois produtos anteriores permanecem intactos; Pomba da Paz mantém cinco fotografias. Origens e numeração original constam somente dos campos internos do cadastro, nunca da publicação.
+
+Cadastro definitivo atualizado para três produtos e onze imagens. Envio/implantação desta inclusão ainda serão verificados; consultar o último registro de HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
+
+
 ## Leitura obrigatória antes de alterar arquivos
 
 1. `AGENTS.md`, `PROJETO.md`, `PRODUTOS.md` e `HISTORICO.md`.

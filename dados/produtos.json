@@ -156,6 +156,111 @@
         "papel": "imagem"
       },
       "componentes": []
+    },
+    {
+      "id": "bandeja-alongada",
+      "nome": "Bandeja Alongada com Porta-Velas",
+      "categoria": "religiosos",
+      "subcategoria": "porta-tercos-bandejas-porta-velas",
+      "descricao": "Bandeja alongada com porta-velas para compor a decoração. Conjunto composto somente por bandeja e porta-velas; vela LED não incluída.",
+      "situacao": "ativo",
+      "ordem": 2,
+      "tipo": "individual",
+      "participacao_kits": {
+        "permitida": true,
+        "papel": "base"
+      },
+      "componentes": [],
+      "imagens": [
+        {
+          "arquivo": "assets/bandeja-alongada-01.webp",
+          "alt": "Bandeja alongada branca com porta-velas; vela LED de ambientação não incluída.",
+          "rotulo": "Conjunto",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Elongated_Tray_and_Candle_Holder1_fa67101e99.png",
+            "numero_original": 1,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "4b58d0b0aa3791a8216efb80d0ad876933dbf050107e4b1b737cf37246953ba5",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem a licença.",
+            "tratamento": "WebP sem perdas; sem recorte, montagem ou edição da imagem original."
+          }
+        },
+        {
+          "arquivo": "assets/bandeja-alongada-04.webp",
+          "alt": "Bandeja alongada branca vista de lado.",
+          "rotulo": "Bandeja — lateral",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Elongated_Tray_and_Candle_Holder4_be267b3941.png",
+            "numero_original": 4,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "9318310c5bd7f8165e220f438a61005ae7dc19dff0448d337ad8de783e7a7cf3",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem a licença.",
+            "tratamento": "WebP sem perdas; sem recorte, montagem ou edição da imagem original."
+          }
+        },
+        {
+          "arquivo": "assets/bandeja-alongada-05.webp",
+          "alt": "Bandeja alongada branca vista de cima.",
+          "rotulo": "Bandeja — superior",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Elongated_Tray_and_Candle_Holder5_dce4128814.png",
+            "numero_original": 5,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "35e3ad14fa7244d3b04aa37db37397d275c9699e59789569ea45c37fbcac6486",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem a licença.",
+            "tratamento": "WebP sem perdas; sem recorte, montagem ou edição da imagem original."
+          }
+        },
+        {
+          "arquivo": "assets/bandeja-alongada-06.webp",
+          "alt": "Porta-velas branco canelado visto de frente.",
+          "rotulo": "Porta-velas",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Elongated_Tray_and_Candle_Holder6_40378bb6ea.png",
+            "numero_original": 6,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "9d0b4f3136e8b923bd3adbd3c9034104cf5abbc162edcc0108be63a8118c801f",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem a licença.",
+            "tratamento": "WebP sem perdas; sem recorte, montagem ou edição da imagem original."
+          }
+        }
+      ],
+      "interno": {
+        "pagina_origem": "https://platform.stlflix.com/pt-BR/product/elongated-tray-and-candle-holder",
+        "aprovacao_publicacao_em": "2026-10-26",
+        "composicao_individual": [
+          "bandeja",
+          "porta-velas"
+        ],
+        "selecionadas_pelo_usuario": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "excluidas_pelo_usuario": [
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "observacoes": "Usuário autorizou publicar as quatro remanescentes após apresentar todos os originais e excluir as demais. Seleção específica autorizada em vez do padrão inicial de duas fotos completas; não editar nem reduzir automaticamente. Foto 1 tem vela LED de ambientação, que não integra a oferta. Fotos 4, 5 e 6 são detalhes selecionados expressamente. Sem kits ou acessórios adicionais incluídos."
+      }
     }
   ],
   "subcategorias": [

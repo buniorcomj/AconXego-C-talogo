@@ -17,19 +17,20 @@ async function fixture(t) {
   for (const product of catalog.produtos) for (const image of product.imagens) await copyFile(path.join(root, 'demo', image.arquivo), path.join(directory, 'demo', image.arquivo));
   const save = () => writeFile(path.join(directory, 'dados/produtos.json'), JSON.stringify(catalog));
   await save();
-  return { directory, catalog, save, html: () => readFile(path.join(directory, 'dist/index.html'), 'utf8') };
+  const expected = { products: catalog.produtos.length, images: new Set(catalog.produtos.flatMap(p => p.imagens.map(i => i.arquivo))).size };
+  return { directory, catalog, save, expected, html: () => readFile(path.join(directory, 'dist/index.html'), 'utf8') };
 }
 
-test('cadastro gera apenas HTML e sete imagens aprovadas; origens e campos internos não vazam', async t => {
+test('cadastro gera apenas HTML e imagens aprovadas; origens e campos internos não vazam', async t => {
   const f = await fixture(t);
   f.catalog.produtos[0].interno.nota_privada = 'MARCADOR_PRIVADO_NAO_PUBLICAR';
   await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 2, images: 7 });
+  assert.deepEqual(await buildCatalog(f.directory), f.expected);
   const html = await f.html();
-  assert.equal((html.match(/<article class="product"/g) ?? []).length, 2);
+  assert.equal((html.match(/<article class="product"/g) ?? []).length, f.expected.products);
   assert.doesNotMatch(html, /stlflix|MARCADOR_PRIVADO|url_origem|pagina_origem|sha256|aprovada_em|licenca/);
   assert.deepEqual((await readdir(path.join(f.directory, 'dist'))).sort(), ['assets', 'index.html']);
-  assert.equal((await readdir(path.join(f.directory, 'dist/assets'))).length, 7);
+  assert.equal((await readdir(path.join(f.directory, 'dist/assets'))).length, f.expected.images);
 });
 
 test('ocultar remove da saída; reativar restaura os mesmos dados e fotografias', async t => {
@@ -41,10 +42,10 @@ test('ocultar remove da saída; reativar restaura os mesmos dados e fotografias'
   const bytes = await readFile(photo);
   product.situacao = 'oculto';
   await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 1, images: 2 });
+  assert.deepEqual(await buildCatalog(f.directory), { products: f.expected.products - 1, images: f.expected.images - 5 });
   assert.doesNotMatch(await f.html(), /Pomba da Paz|pomba-da-paz/);
   assert.deepEqual(await readFile(photo), bytes);
-  assert.equal(f.catalog.produtos.length, 2);
+  assert.equal(f.catalog.produtos.length, f.expected.products);
   product.situacao = 'ativo';
   await f.save();
   await buildCatalog(f.directory);
@@ -112,11 +113,11 @@ test('adicionar produto usa o cadastro e as imagens locais; ocultar não deixa a
   const extra = structuredClone(f.catalog.produtos[0]);
   extra.id = 'produto-de-teste'; extra.nome = 'Produto de teste'; extra.ordem = 3;
   f.catalog.produtos.push(extra); await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 3, images: 7 });
+  assert.deepEqual(await buildCatalog(f.directory), { products: f.expected.products + 1, images: f.expected.images });
   extra.situacao = 'oculto';
   f.catalog.produtos[1].situacao = 'oculto'; await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 1, images: 2 });
-  assert.equal((await readdir(path.join(f.directory, 'dist/assets'))).length, 2);
+  assert.deepEqual(await buildCatalog(f.directory), { products: f.expected.products - 1, images: f.expected.images - 5 });
+  assert.equal((await readdir(path.join(f.directory, 'dist/assets'))).length, f.expected.images - 5);
 });
 
 test('ordenação hierárquica é controlada pelo cadastro, independentemente da ordem da lista', async t => {
@@ -139,7 +140,7 @@ test('possibilidade de participar de kits não cria combinações ou preços aut
   assert.ok(f.catalog.produtos.every(p => p.participacao_kits.permitida));
   assert.ok(f.catalog.produtos.every(p => p.tipo === 'individual' && p.componentes.length === 0));
   await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 2, images: 7 });
+  assert.deepEqual(await buildCatalog(f.directory), f.expected);
   assert.doesNotMatch(await f.html(), /componentes|participacao_kits|produto_id|["']preco["']|R\$\s*\d/);
 });
 
@@ -149,7 +150,7 @@ test('kit futuro depende de registro explícito e valida identificação dos com
   kit.id = 'kit-de-teste'; kit.nome = 'Kit de teste'; kit.tipo = 'kit'; kit.subcategoria = 'kits-religiosos';
   kit.componentes = [{produto_id:'bandeja-cruz',quantidade:1},{produto_id:'pomba-da-paz',quantidade:1}];
   f.catalog.produtos.push(kit); await f.save();
-  assert.deepEqual(await buildCatalog(f.directory), { products: 3, images: 7 });
+  assert.deepEqual(await buildCatalog(f.directory), { products: f.expected.products + 1, images: f.expected.images });
   kit.componentes[1].produto_id = 'nao-existe'; await f.save();
   await assert.rejects(buildCatalog(f.directory), /Componente inválido/);
   kit.componentes[1].produto_id = 'pomba-da-paz';
