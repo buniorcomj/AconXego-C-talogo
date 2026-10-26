@@ -72,3 +72,7 @@ Finalizar Religiosos antes de cadastrar Natalinos. Categorias principais RELIGIO
 Todo produto conserva ID próprio, categoria, subcategoria, fotografias e campos de participação em kits. Imagens pequenas podem ser combinadas futuramente com porta-terços; registrar apenas elegibilidade/papel. Não criar kits, composições, preços ou imagens de conjuntos automaticamente. Combinações e preços dependem de instrução futura do usuário. Kit futuro exige registro e aprovação próprios, referenciando componentes por IDs. Não adicionar carrinho, pagamento ou loja virtual nesta etapa.
 
 Há rascunho da Bandeja Alongada com Porta-Velas aguardando conferência em `internal/elongated-tray-review/product-draft.json`; não promover à publicação sem aprovação. Preservar também os commits locais da organização ainda não enviados. Antes de push, apresentar o conjunto completo de commits pendentes, não apenas o novo produto.
+
+## Conferência final de fotografias de produtos individuais
+
+Mostrar somente componentes da oferta individual. Para a Bandeja Alongada: somente bandeja e porta-velas, sem vela LED, imagens religiosas, terços ou acessórios. Preferir originais isolados, sem inventar áreas encobertas ou alterar a peça. Não montar kits a partir de fotos de ambientação. A seleção anterior com vela foi revista: originais 3 e 6 da galeria, convertidos em `bandeja-alongada-bandeja.webp` e `bandeja-alongada-porta-velas.webp`, aguardam aprovação final antes de push/publicação. Ver PROJETO.md e PRODUTOS.md. Não alterar produtos já publicados retroativamente sem instrução.

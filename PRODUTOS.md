@@ -76,8 +76,18 @@ Categorias e subcategorias têm IDs e `ordem` próprios no JSON. Toda subcategor
 - Kit futuro é outro produto, com ID, categoria/subcategoria, fotos e composição expressamente aprovados. Usar `tipo: "kit"` e `componentes: [{"produto_id": "id-existente", "quantidade": 1}, ...]`. Todos os IDs devem existir, ser individuais, elegíveis e da mesma categoria; não incluir o próprio kit nem kits aninhados. O sistema valida, mas não cria esses registros.
 - Preços e combinações serão definidos posteriormente. Não gerar valores automáticos, fotografias de conjuntos ou funcionalidades de loja.
 
-### Próximo rascunho, sem aprovação de imagens
+### Próximo rascunho, aguardando aprovação final das fotografias
 
 **Bandeja Alongada com Porta-Velas** (`bandeja-alongada`), Religiosos → Porta-terços, bandejas e porta-velas; base potencial para kits, sem combinação. Descrição proposta: “Bandeja alongada com acabamento canelado e porta-velas para compor a decoração.”
 
-Duas imagens propostas: conjunto bandeja/porta-vela como principal, bandeja vista de cima como secundária. Composição com outras imagens religiosas, variantes lisas e imagens técnicas não selecionadas. Não supor inclusão de vela LED ou de outros acessórios. Rascunho local e origem em `internal/elongated-tray-review/`; candidatos WebP `bandeja-alongada-principal.webp` e `bandeja-alongada-secundaria.webp`. Não entram no cadastro definitivo, commit de produto ou saída pública antes de aprovação. Não inventar `aprovada_em`.
+Duas fotografias finais propostas: original 3 da galeria (bandeja sozinha) como principal e original 6 (porta-velas vazio) como secundária. Composição do produto individual confirmada pelo usuário: somente bandeja e seu porta-velas. Não incluir vela LED, imagens religiosas, terços ou acessórios. A seleção anterior com vela LED foi substituída na proposta, sem apagar seus arquivos. Rascunho e origens em `internal/elongated-tray-review/`; novos candidatos WebP `bandeja-alongada-bandeja.webp` e `bandeja-alongada-porta-velas.webp`, sem recorte, montagem ou alteração de pixels. Aguardar aprovação final antes de cadastrar definitivamente, commitar o produto ou publicar. Não inventar `aprovada_em`.
+
+## Fotografia do produto individual — regra de 26/10/2026
+
+A Bandeja Alongada com Porta-Velas é composta **somente pela bandeja e seu porta-velas**. Não incluir imagens religiosas, terços, vela LED ou acessórios extras como parte da oferta individual. A foto principal deve mostrar apenas os componentes reais dessa oferta; quando não houver original adequado dos dois juntos, apresentar fotos originais separadas da bandeja e do porta-velas. Deixar clara a composição comercial e não confundir itens fotografados com kit aprovado.
+
+Preferir imagens originais da própria galeria que já mostrem os componentes isolados. Não remover objetos de modo que seja necessário inventar partes encobertas, deformar produtos, mudar cores/texturas/proporções ou gerar uma nova aparência. Se os originais não permitirem separação fiel, informar a limitação e solicitar fotografia adequada. Qualquer edição eventualmente necessária exige conferência das imagens finais antes de publicar. Não usar fotografia de produto semelhante ou de outro modelo.
+
+Fotos de composição com outras peças ficam restritas à conferência de possíveis kits futuros; não criam kit, preço ou inclusão de acessórios. Combinações exigem aprovação própria. Produtos e imagens já publicados permanecem preservados; não aplicar mudanças retroativas sem autorização.
+
+Conferência da Bandeja Alongada: a seleção anterior tinha uma vela LED visível na principal. A nova proposta usa **original 3, bandeja sozinha**, e **original 6, porta-velas vazio**. São arquivos originais convertidos para WebP sem perdas, sem montagem nem edição da peça. As candidatas anteriores foram preservadas localmente, sem exclusão. As duas fotos finais aguardam aprovação; esta instrução suspende a publicação até a conferência final solicitada pelo usuário.

@@ -44,3 +44,7 @@ Se precisar corrigir uma versão anterior, preservar a linha original e acrescen
 - Não houve push desta etapa. Commits locais de v0.4.0 também continuam pendentes; verificar o escopo completo antes de qualquer envio à main.
 
 Validação local desta etapa: dez testes passaram; o HTML gerado é idêntico ao da organização anterior; campos preexistentes do cadastro e sete imagens preservados byte a byte. A Bandeja Alongada não aparece em `dist`. O commit de regras/estrutura é local; as duas imagens candidatas do novo produto ainda não foram commitadas nem enviadas.
+
+## 26/10/2026 — conferência final da Bandeja Alongada (sem publicação)
+
+Usuário aprovou a continuidade, mas exigiu nova aprovação das fotografias finais antes da publicação. Composição individual definida: somente bandeja e porta-velas. A principal anterior mostrava vela LED; substituída na proposta por original 3 (bandeja sozinha), acompanhado de original 6 (porta-velas vazio). Ambas são imagens da galeria exata, convertidas para WebP sem perdas e verificadas pixel a pixel. Nenhuma montagem, geração, remoção de objeto ou reconstrução da peça. Fotos anteriores preservadas localmente; nada apagado. Regra permanente registrada nos documentos e instruções. Dois produtos publicados e sete imagens existentes continuam intactos. Não houve push nem deploy; seleção final aguarda conferência do usuário.

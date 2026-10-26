@@ -14,3 +14,5 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 
 - Finalizar Religiosos antes dos Natalinos. Ordem por cadastro: porta-terços/bandejas/porta-velas → imagens pequenas → imagens grandes → kits religiosos.
 - Formato 2: cada produto tem subcategoria e possibilidade de participar de kits. Só preparar referências; não criar kits ou preços automaticamente, nem carrinho/pagamento. Preservar IDs e imagens.
+
+- Fotos de produto individual mostram apenas os componentes da oferta. Bandeja Alongada: bandeja e porta-velas, sem vela LED ou acessórios; usar originais isolados e aguardar aprovação final. Não inventar partes encobertas ao separar objetos. Ver regra em PRODUTOS.md.
