@@ -120,3 +120,7 @@ Por instrução do usuário, links e uploads têm igual prioridade, incluindo fo
 ## 26/10/2026 — Supabase e painel adiados pelo usuário
 
 Resposta posterior do usuário suspendeu a implementação administrativa antes de iniciar qualquer código: não criar banco, login, painel ou infraestrutura Supabase agora. Continuar atualizações pelo Codex, fontes por link e upload igualmente aceitas; apresentar todos os originais, aguardar escolha e autorização de publicação. Preservar produtos/fotos aprovados, categorias e referências futuras de kits. Prioridade: concluir religiosos antes dos natalinos. Arquitetura e custos de referência preservados em PLANO_ADMINISTRATIVO.md, para nova autorização futura. Nenhum backend, conta de serviço ou recurso pago foi criado. Apenas documentação atualizada; catálogo público permanece intacto.
+
+## 26/10/2026 — Papai Noel: foto manual com fundo branco definida como capa
+
+Recebidas visualmente três imagens na conversa: fundo branco, ambientação natalina, ambientação de escritório. Usuário escolheu fundo branco como principal. Registrada a escolha e ordem proposta das demais sem edição/publicação. Nenhum arquivo de imagem acessível foi encontrado nas pastas de anexos; não foram geradas cópias ou versões otimizadas. Originais precisam ser disponibilizados como arquivos antes da futura publicação. Produto permanece rascunho; código, cadastro ativo, fotos existentes e site não alterados. Registro local, sem push.
