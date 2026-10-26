@@ -182,3 +182,7 @@ Recebida página original `the-holy-family`; recuperados onze arquivos da galeri
 ### Seleção da Sagrada Família — 26/10/2026
 
 Usuário retirou **6, 7, 8, 9, 10, 11 e 12** da seleção. Manter **1, 2, 3, 4 e 5**, com **imagem 1 como capa/principal** e ordem original na galeria. Não renumerar nem apagar originais. Sem autorização de edição ou publicação nesta escolha; aguardar publicação expressamente autorizada. Seleção salva no rascunho local `internal/holy-family-review/product-draft.json`. Catálogo existente permanece intacto.
+
+### Link em conferência — MakerWorld 2113086 (26/10/2026)
+
+Recebido link com slug `santa-display-tree-modular-parts`, perfil `2286312`. Tentativa de leitura pública negada: “Please contact the site owner for access.” Nenhuma fotografia recuperada, editada ou selecionada; não inferir características apenas pelo slug. Referência natalina mantida em conferência, sem alterar a prioridade geral dos Religiosos nem publicar produto. Rascunho local em `internal/makerworld-2113086-review/`. Para continuar, obter fotografias originais por envio manual ou acesso público permitido, sem contornar restrições; verificar licença comercial antes de reutilização.

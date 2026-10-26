@@ -102,3 +102,7 @@ Após apresentar todos os originais, usuário excluiu 6 a 12, manteve 1 a 5 e de
 ### v0.7.0 — implantação confirmada
 
 Commit `05b9799` enviado e confirmado na main do GitHub. Vercel concluída: https://vercel.com/acon-xego/aconxegocatalogo/EgRo7AEsP7aZ1sGphvrZBTWdutcz. Site https://aconxegocatalogo.vercel.app verificado: HTML igual ao build; dezesseis arquivos WebP públicos idênticos aos locais aprovados, sem URLs/fontes internas no HTML. Quatro produtos, Sagrada Família com foto 1 na vitrine e galeria de cinco imagens em ordem 1 a 5. Galerias dos quatro produtos testadas em 390px e 1440px, com abertura/fechamento e carregamento das fotos, sem erros JS ou overflow. Três produtos e onze imagens anteriores preservados. Registro posterior apenas documental.
+
+## 26/10/2026 — conferência de link MakerWorld, acesso negado
+
+Recebido modelo 2113086, perfil 2286312. Acesso público respondeu “Please contact the site owner for access.” Não recuperadas fotografias; sem bypass, edição, alteração do catálogo ou publicação. Produto mantido pendente para obtenção de imagens originais por meio permitido. Apenas registro local, sem push/deploy nesta etapa.
