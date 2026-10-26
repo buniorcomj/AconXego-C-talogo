@@ -1,0 +1,36 @@
+# Histórico AconXego
+
+Datas em America/Sao_Paulo. As versões abaixo são marcos documentais; não existem tags Git de versão criadas até esta organização. Os hashes são a referência dos commits efetivos. Não reescrever este histórico para apagar decisões ou falhas; acrescentar correções.
+
+| Data | Versão / estado | Commit | Mudança e verificação |
+| --- | --- | --- | --- |
+| 26/10/2026 | v0.0.0 — inicial | `4469d0a` | Repositório com apenas README. Sem aplicação ou dependências. |
+| 26/10/2026 | v0.1.0 — primeira entrega | `f8619ce` | Catálogo estático com Bandeja Cruz com Porta-Velas, duas imagens locais aprovadas, Artigos Religiosos e galeria. Build com saída isolada em dist; implantação falhou por configuração não aceita pela Vercel. |
+| 26/10/2026 | v0.2.0 — publicação corrigida | `262cef9` | Removida exclusivamente a propriedade inválida `directoryListing` de vercel.json. JSON e build válidos; implantação Vercel concluída; site público HTTP 200, imagens e galeria conferidas. |
+| 26/10/2026 | v0.3.0 — publicada | `9745c61` | Adicionada Pomba da Paz em Artigos Religiosos após aprovação, com cinco imagens locais WebP sem perdas e galeria. Bandeja preservada. Push para main; Vercel concluída; sete imagens públicas comparadas byte a byte aos arquivos aprovados; galerias verificadas em 390px e 1440px. |
+| 26/10/2026 | v0.4.0 — preparada, não enviada | commits locais desta organização (consultar `git log`) | Documentos de continuidade, cadastro versionado com origens e hashes, renderização por estado e testes de ocultação/reativação. Sem alterações nas sete imagens, nomes, descrições ou situações dos produtos publicados. Não houve push/deploy desta organização; publicação de referência continua v0.3.0 até autorização e confirmação. |
+
+## Decisões preservadas
+
+- Um único repositório e um único projeto Vercel existentes; URL https://aconxegocatalogo.vercel.app.
+- Stack atual: HTML/CSS/JavaScript estáticos + build Node.js; sem migração para React/Vite ou backend nesta etapa.
+- Fontes usadas somente para recuperação/conferência das imagens; não devem aparecer no catálogo público. Aprovação visual não comprova licença comercial.
+- Imagens WebP locais sem perdas. Nada gerado por IA para representar produtos. Bandeja sem composição com pomba; Pomba da Paz é outro produto.
+- WhatsApp ainda sem número; sem preços, pagamentos, administração autenticada ou área de lojistas implementados.
+- Situações `ativo`, `oculto` e `descontinuado`; conservar cadastro e fotografias. Exclusão definitiva exige autorização.
+- GitHub público: documentos e origens versionados não são confidenciais; não registrar dados sensíveis.
+- Main está integrada à Vercel: push pode publicar; pedir autorização para cada mudança de escopo conforme as instruções do usuário. Nesta organização, o usuário exige revisar antes do push.
+
+## Como registrar próximas mudanças
+
+Acrescentar data, versão/marco, problema, produtos/campos afetados, resultado das verificações, commit quando disponível e situação de publicação (local, enviado, implantação pendente, concluída ou falha). Para uma autorização de publicação, registrar o escopo concreto; não presumir autorização permanente. Não anunciar “publicado” com base somente em um build local ou push.
+
+Se precisar corrigir uma versão anterior, preservar a linha original e acrescentar uma nova. Usar `git log --date=iso-strict --oneline`, `git show <hash>` e `git diff` para recuperar detalhes; não depender de transcrições de conversas.
+
+## Validação da organização v0.4.0 (local, antes do push)
+
+- Seis testes automatizados de cadastro/estados, isolamento e validação passaram.
+- Vitrine comparada com o snapshot v0.3.0 em 390px e 1440px: capturas idênticas pixel a pixel; estilos, nomes, descrições e ordem preservados.
+- Galerias de duas e cinco imagens, botões, setas e Escape verificados em ambas as larguras.
+- Sete imagens conferidas byte a byte com o commit publicado e com os SHA-256 do cadastro; nenhuma alterada.
+- A verificação de persistência remota dos novos documentos só pode ser concluída após push autorizado. Até lá, os novos commits são apenas locais.

@@ -1,0 +1,143 @@
+{
+  "versao": 1,
+  "categorias": [
+    {
+      "id": "religiosos",
+      "nome": "Artigos Religiosos"
+    },
+    {
+      "id": "natalinos",
+      "nome": "Coleção Natalina"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "bandeja-cruz",
+      "nome": "Bandeja Cruz com Porta-Velas",
+      "categoria": "religiosos",
+      "descricao": "Uma peça para compor a decoração religiosa.",
+      "situacao": "ativo",
+      "ordem": 1,
+      "imagens": [
+        {
+          "arquivo": "assets/bandeja-cruz-principal.webp",
+          "alt": "Bandeja branca em formato de cruz com acabamento canelado e porta-vela.",
+          "rotulo": "Foto principal",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Cross_Tray_and_Candle_Holder1_919355c36f.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "799846935bb4f9404d73d3104859f6a604bfe31ef6f8583fa80a4fad7900e705",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        },
+        {
+          "arquivo": "assets/bandeja-cruz-secundaria.webp",
+          "alt": "Bandeja branca em formato de cruz vista de cima.",
+          "rotulo": "Vista de cima",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Cross_Tray_and_Candle_Holder3_a1e4726551.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "eca3c79f7ecdc08606be9bc3f1c73769703bf82349a5a883f1f573a6e3f79924",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        }
+      ],
+      "interno": {
+        "pagina_origem": "https://platform.stlflix.com/pt-BR/product/cross-tray-and-candle-holder",
+        "publicado_em": "2026-10-26",
+        "observacoes": "Um produto; primeira foto é a principal. Não incluir a composição com pomba na galeria deste produto. Não presumir vela ou acessórios incluídos."
+      }
+    },
+    {
+      "id": "pomba-da-paz",
+      "nome": "Pomba da Paz",
+      "categoria": "religiosos",
+      "descricao": "Um símbolo de paz para compor a decoração e presentear com significado.",
+      "situacao": "ativo",
+      "ordem": 2,
+      "imagens": [
+        {
+          "arquivo": "assets/pomba-da-paz-01.webp",
+          "alt": "Pomba branca com ramo dourado no bico, vista em três quartos.",
+          "rotulo": "Foto 1",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Peace_Dove_Statue_1_ca7a374a19.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "fbd1baacdaa8a82bec567e61765f21df1ce80cab16c2c06fd7717cabbad3f12f",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        },
+        {
+          "arquivo": "assets/pomba-da-paz-02.webp",
+          "alt": "Pomba da Paz vista de lado.",
+          "rotulo": "Foto 2",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Peace_Dove_Statue_2_3aeaf53183.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "05f6ae3719eccbb78f7d20faa2e98c7025e978909d4a1cd874ec793ba9a20559",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        },
+        {
+          "arquivo": "assets/pomba-da-paz-03.webp",
+          "alt": "Pomba da Paz vista de costas.",
+          "rotulo": "Foto 3",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Peace_Dove_Statue_3_2ae9f75c64.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "75b8a63ea2db7b3df3828ee7be32baa85888f5c8a4fb07951be93fc24a3646a5",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        },
+        {
+          "arquivo": "assets/pomba-da-paz-04.webp",
+          "alt": "Pomba da Paz vista pelo outro lado.",
+          "rotulo": "Foto 4",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Peace_Dove_Statue_4_b23307e6d0.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "68ca3d80d2a5b2c38526845f3a9c1ce8112bbaec8c89172425f00c306c0b049e",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        },
+        {
+          "arquivo": "assets/pomba-da-paz-05.webp",
+          "alt": "Pomba da Paz vista de frente.",
+          "rotulo": "Foto 5",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/Peace_Dove_Statue_5_de279738e7.png",
+            "recuperada_em": "2026-10-26",
+            "sha256": "e657310d01ef0b0c4178e0e6549a23419d49c171ffadbae0c187f272d79c01d4",
+            "aprovada_em": "2026-10-26",
+            "licenca": "Verificar licença de uso comercial; aprovação visual não comprova licença."
+          }
+        }
+      ],
+      "interno": {
+        "pagina_origem": "https://platform.stlflix.com/pt-BR/product/peace-dove-statue",
+        "publicado_em": "2026-10-26",
+        "observacoes": "Cinco imagens aprovadas. Imagem técnica não selecionada. A origem oficial não comprova fotografia física em vez de renderização."
+      }
+    }
+  ]
+}
