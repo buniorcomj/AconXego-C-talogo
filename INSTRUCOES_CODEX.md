@@ -118,6 +118,20 @@ Organização/documentação enviada à main até `82978c3`; GitHub confirmou os
 
 ### Critério estrito de seleção e situação atual — 26/10/2026
 
-Fotos com outros produtos são referências de avaliação, **não seleções finais**: não apresentá-las como candidatas aprováveis nem usá-las para completar a galeria. Só apresentar como final uma dupla que atenda a todos os critérios acima. Recorte ou edição fiel só é aceitável mantendo o conjunto completo e as características reais; quando objetos encobrem partes da peça, não inventar o que está por baixo. Se não for possível obter duas fotos corretas, declarar a dificuldade e manter o novo produto pendente.
+Fotos com outros produtos devem ser apresentadas na conferência preliminar, sem descarte automático. O usuário selecionará o que aproveitar; essa escolha não equivale a aprovação de publicação. Só chamar de seleção final a etapa posterior de conferência e aprovação. Recorte ou edição fiel só é aceitável mantendo o conjunto completo e as características reais; quando objetos encobrem partes da peça, não inventar o que está por baixo. Se não for possível obter duas fotos corretas, declarar a dificuldade e manter o novo produto pendente.
 
 Nos originais já conferidos das bandejas, os acessórios nas vistas superiores sobrepõem-se ao interior. Um recorte não os remove mantendo a peça completa; preencher a área exigiria inventar detalhes encobertos. Não existe dupla final adequada selecionada para a Alongada e não há substituição aprovada para a Cruz. Nenhuma edição foi produzida. Manter Alongada pendente, Cruz inalterada e as cinco fotos aprovadas da Pomba da Paz intactas. Aguardar novas fotografias reais adequadas ou outra fonte original verificável, e apresentar o resultado final ao usuário antes de publicar.
+
+## Procedimento vigente de seleção — primeiro todos os originais
+
+Decisão posterior de 26/10/2026. Para cada novo produto ou revisão de seleção:
+
+1. Recuperar **todas as imagens originais públicas disponíveis do produto exato**, inclusive as que mostrem acessórios, composições, variantes e imagens técnicas; mostrar também a capa oficial identificada separadamente quando existir. Não contornar acesso.
+2. Apresentar visualmente todas, numeradas de forma estável e com links diretos acessíveis. Identificar o tipo sem descartar nem escolher pelo usuário. A quantidade apresentada para escolha não fica limitada às duas fotos pretendidas para a publicação.
+3. **Aguardar a seleção do usuário antes de fazer recortes, edições, montagens, tratamentos ou alterações.** Não apresentar um descarte automático como se fosse a decisão final. Selecionar uma imagem não autoriza modificá-la nem publicar.
+4. Só depois da escolha, avaliar junto ao usuário se há tratamento necessário e fiel. Nunca inventar vistas, modificar características reais ou recriar peças encobertas. Apresentar os resultados finais para aprovação específica antes de publicação/substituição.
+5. Manter o catálogo atual, arquivos e aprovações anteriores. Não publicar nem substituir fotografias sem autorização. A Pomba da Paz conserva suas cinco fotos aprovadas.
+
+O padrão pretendido para novos produtos continua sendo duas vistas do produto completo, mas é objetivo da seleção final, **não filtro para ocultar originais do usuário**. Esta instrução substitui a orientação anterior de não apresentar fotos com extras como candidatas à escolha. Todo material pode ser apresentado na conferência preliminar; o usuário decide o que aproveitar. Não chamar essa apresentação de fotografias finais prontas para publicação.
+
+Rodada atual: começar pela Bandeja Alongada, dez imagens da galeria na ordem original (1–10), mais a capa oficial (11). Nenhuma descartada ou editada. Aguardar a escolha antes de preparar tratamento. Depois apresentar a Bandeja Cruz também integralmente, sem modificar sua seleção publicada. Originais e mapa de numeração estão localmente em `internal/elongated-tray-review/galeria-completa.json`; arquivos de conferência permanecem fora do conteúdo público.
