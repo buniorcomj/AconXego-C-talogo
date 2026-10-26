@@ -74,3 +74,7 @@ Por instrução do usuário, não filtrar nem descartar antecipadamente fotos po
 ## 26/10/2026 — primeira exclusão na seleção da Bandeja Alongada
 
 Usuário retirou as imagens 2, 3 e 7 da seleção. Restam 1, 4, 5, 6, 8, 9, 10 e 11, mantendo a numeração original. Exclusão apenas da seleção, sem apagar arquivos, alterar fotos, cadastrar definitivamente ou publicar o produto. Escolha final e tratamentos seguem pendentes.
+
+## 26/10/2026 — segunda exclusão na seleção da Bandeja Alongada
+
+Usuário retirou também 8, 9, 10 e 11; restam 1, 4, 5 e 6. Mantidos originais e numeração. Nenhuma edição, exclusão física, mudança na vitrine ou publicação.

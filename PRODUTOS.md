@@ -152,3 +152,7 @@ Rodada atual: começar pela Bandeja Alongada, dez imagens da galeria na ordem or
 ### Seleção da Bandeja Alongada — decisão do usuário em 26/10/2026
 
 Retirar **2, 3 e 7** da seleção, mantendo os arquivos originais e a numeração da apresentação completa. Permanecem disponíveis **1, 4, 5, 6, 8, 9, 10 e 11**. Isso não significa seleção final ou autorização de edição/publicação das restantes. Nenhum recorte ou tratamento foi feito. Aguardar a próxima escolha; não renumerar nem excluir arquivos.
+
+### Atualização da seleção da Bandeja Alongada — 26/10/2026
+
+O usuário retirou também **8, 9, 10 e 11**. Exclusões acumuladas: **2, 3, 7, 8, 9, 10 e 11**. Permanecem para escolha **1, 4, 5 e 6**, na numeração original. Arquivos preservados; sem escolha final, edição ou autorização de publicação implícita.
