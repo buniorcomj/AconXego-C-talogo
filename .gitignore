@@ -1,0 +1,5 @@
+# Private review records and unselected originals must stay local.
+/internal/
+/demo/assets/bandeja-cruz-original.png
+/dist/
+/.vercel/
