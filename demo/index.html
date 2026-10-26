@@ -12,13 +12,15 @@
 <header><a href="#" class="brand" aria-label="AconXego início">AconXego</a><nav aria-label="Coleções"><a href="#natalinos">Natalinos</a><a href="#religiosos" aria-current="page">Artigos Religiosos</a></nav></header>
 <main>
 <section class="intro"><span class="eyebrow">Catálogo • AconXego</span><h1>Detalhes que acolhem.</h1><p class="muted">Conheça nossa seleção de peças decorativas e religiosas para a sua loja.</p></section>
-<section id="religiosos" aria-labelledby="collection"><div class="section-head"><h2 id="collection">Artigos Religiosos</h2><span>Prévia • 1 produto</span></div>
-<article class="product"><button type="button" class="photo photo-open" aria-label="Ver detalhes da Bandeja Cruz com Porta-Velas"><img src="assets/bandeja-cruz-principal.webp" width="1080" height="1350" alt="Bandeja branca em formato de cruz com acabamento canelado e porta-vela." fetchpriority="high" decoding="async"></button><div class="info"><span class="eyebrow">Artigos Religiosos</span><h3>Bandeja Cruz com Porta-Velas</h3><p class="muted">Uma peça para compor a decoração religiosa.</p><button class="button" id="details" type="button">Conhecer a peça <span aria-hidden="true">↗</span></button><p class="pending">Contato pelo WhatsApp disponível após configuração.</p></div></article></section>
+<section id="religiosos" aria-labelledby="collection"><div class="section-head"><h2 id="collection">Artigos Religiosos</h2><span>Prévia • 2 produtos</span></div>
+<article class="product"><button type="button" class="photo photo-open" aria-label="Ver detalhes da Bandeja Cruz com Porta-Velas"><img src="assets/bandeja-cruz-principal.webp" width="1080" height="1350" alt="Bandeja branca em formato de cruz com acabamento canelado e porta-vela." fetchpriority="high" decoding="async"></button><div class="info"><span class="eyebrow">Artigos Religiosos</span><h3>Bandeja Cruz com Porta-Velas</h3><p class="muted">Uma peça para compor a decoração religiosa.</p><button class="button" id="details" type="button">Conhecer a peça <span aria-hidden="true">↗</span></button><p class="pending">Contato pelo WhatsApp disponível após configuração.</p></div></article>
+<article class="product" id="pomba-da-paz" style="margin-top:24px"><button type="button" class="photo photo-open" id="dove-photo" aria-label="Ver detalhes da Pomba da Paz"><img src="assets/pomba-da-paz-01.webp" width="1080" height="1350" alt="Pomba branca com ramo dourado no bico, vista em três quartos." loading="lazy" decoding="async"></button><div class="info"><span class="eyebrow">Artigos Religiosos</span><h3>Pomba da Paz</h3><p class="muted">Um símbolo de paz para compor a decoração e presentear com significado.</p><button class="button" id="dove-details" type="button">Conhecer a peça <span aria-hidden="true">↗</span></button><p class="pending">Contato pelo WhatsApp disponível após configuração.</p></div></article></section>
 
 <section id="natalinos" class="empty-note" aria-label="Coleção Natalina">Coleção Natalina: imagens e produtos serão incluídos após aprovação.</section>
 </main>
 <footer><span class="brand">AconXego</span><span>Prévia local • sem preços ou pedidos online</span></footer>
 <dialog id="product-dialog" aria-labelledby="product-title"><button class="close" id="close" type="button">Fechar ×</button><h2 id="product-title">Bandeja Cruz com Porta-Velas</h2><img id="detail-image" width="1080" height="1350" alt="Bandeja em cruz branca e canelada com porta-vela."><div class="gallery" role="group" aria-label="Fotografias do produto"><button type="button" data-image="0" aria-pressed="true">Foto principal</button><button type="button" data-image="1" aria-pressed="false">Vista de cima</button></div><p class="gallery-status" aria-live="polite">Foto 1 de 2</p><p>Uma peça para compor a decoração religiosa.</p></dialog>
+<dialog id="dove-dialog" aria-labelledby="dove-title"><button class="close" id="dove-close" type="button">Fechar ×</button><h2 id="dove-title">Pomba da Paz</h2><img id="dove-image" width="1080" height="1350" alt="Pomba da Paz"><div class="gallery" style="flex-wrap:wrap" role="group" aria-label="Fotografias da Pomba da Paz"><button type="button" data-dove-image="0" aria-pressed="true">Foto 1</button><button type="button" data-dove-image="1" aria-pressed="false">Foto 2</button><button type="button" data-dove-image="2" aria-pressed="false">Foto 3</button><button type="button" data-dove-image="3" aria-pressed="false">Foto 4</button><button type="button" data-dove-image="4" aria-pressed="false">Foto 5</button></div><p id="dove-status" class="gallery-status" aria-live="polite">Foto 1 de 5</p><p>Um símbolo de paz para compor a decoração e presentear com significado.</p></dialog>
 <script>
 const dialog=document.querySelector('#product-dialog');
 const photos=[{src:'assets/bandeja-cruz-principal.webp',alt:'Bandeja branca em cruz com acabamento canelado e porta-vela.'},{src:'assets/bandeja-cruz-secundaria.webp',alt:'Bandeja branca em formato de cruz vista de cima.'}];
@@ -31,5 +33,17 @@ document.querySelector('.photo-open').addEventListener('click',openProduct);
 controls.forEach(button=>button.addEventListener('click',()=>selectPhoto(Number(button.dataset.image))));
 dialog.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();selectPhoto((selected+1)%photos.length);}});
 document.querySelector('#close').addEventListener('click',()=>dialog.close());
+
+const doveDialog=document.querySelector('#dove-dialog');
+const doveButtons=[...document.querySelectorAll('[data-dove-image]')];
+const doveAlts=['Pomba branca com ramo dourado no bico, vista em três quartos.','Pomba da Paz vista de lado.','Pomba da Paz vista de costas.','Pomba da Paz vista pelo outro lado.','Pomba da Paz vista de frente.'];
+let doveSelected=0;
+function selectDove(index){doveSelected=index;const image=document.querySelector('#dove-image');image.src=`assets/pomba-da-paz-${String(index+1).padStart(2,'0')}.webp`;image.alt=doveAlts[index];doveButtons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));document.querySelector('#dove-status').textContent=`Foto ${index+1} de 5`;}
+function openDove(){selectDove(0);doveDialog.showModal();}
+document.querySelector('#dove-photo').addEventListener('click',openDove);
+document.querySelector('#dove-details').addEventListener('click',openDove);
+doveButtons.forEach(button=>button.addEventListener('click',()=>selectDove(Number(button.dataset.doveImage))));
+doveDialog.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();selectDove((doveSelected+(event.key==='ArrowRight'?1:4))%5);}});
+document.querySelector('#dove-close').addEventListener('click',()=>doveDialog.close());
 </script>
 </body></html>

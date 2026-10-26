@@ -9,6 +9,12 @@ const publicFiles = [
   'index.html',
   'assets/bandeja-cruz-principal.webp',
   'assets/bandeja-cruz-secundaria.webp',
+  'assets/pomba-da-paz-01.webp',
+  'assets/pomba-da-paz-02.webp',
+  'assets/pomba-da-paz-03.webp',
+  'assets/pomba-da-paz-04.webp',
+  'assets/pomba-da-paz-05.webp',
+
 ];
 await rm(output, { recursive: true, force: true });
 for (const file of publicFiles) {
@@ -16,4 +22,4 @@ for (const file of publicFiles) {
   await mkdir(path.dirname(target), { recursive: true });
   await copyFile(path.join(root, 'demo', file), target);
 }
-console.log('Catálogo preparado em dist/: uma página e duas imagens aprovadas.');
+console.log('Catálogo preparado em dist/: uma página e as imagens selecionadas para o catálogo.');
