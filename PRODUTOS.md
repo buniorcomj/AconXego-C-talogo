@@ -1,5 +1,21 @@
 # Produtos AconXego
 
+## Regras vigentes de fotografias — fontes equivalentes e quantidade livre
+
+Decisão de 26/10/2026, posterior aos critérios de duas fotos. **Esta seção substitui todas as instruções anteriores que imponham quantidade fixa, priorizem importação por link ou recusem fotos ambientadas.** Registros antigos permanecem como histórico, sem prevalecer sobre estas regras.
+
+- Fotografias obtidas por link e enviadas manualmente têm o mesmo valor. Aceitar acervo próprio e fotografias já produzidas para a Shopee, sem exigir link de origem.
+- Quando o usuário fornecer link de STLflix, MakerWorld, PinkyWings ou outra plataforma, tentar recuperar todos os originais públicos por meios permitidos. Não contornar autenticação ou bloqueios. Se não funcionar, permitir envio manual e continuar o rascunho, sem impedir o cadastro.
+- Apresentar todos os originais numerados para escolha antes de cadastrar definitivamente ou publicar; não filtrar por fundo, ambientação ou acessórios antes da seleção. Nenhum recorte, edição ou tratamento sem a escolha e autorização necessárias.
+- Aceitar fotos com fundo branco e fotos ambientadas em decorações. Não alterar características reais, inventar detalhes/ângulos ou representar acessórios de ambientação como componentes incluídos na venda. Explicitar a composição comercial real quando necessário.
+- **Não há quantidade fixa de fotos por produto.** Publicar uma, duas ou mais, exatamente conforme seleção, ordem e aprovação do usuário; não completar, reduzir ou excluir automaticamente galerias aprovadas.
+- Preservar originais e versões anteriores. Remover da vitrine não apaga o arquivo. Permitir no painel seleção, capa, organização, substituição e adição futura, com prévia antes de publicar.
+- Produtos novos ficam como rascunho até aprovação, incluindo os que dependem de uploads. Seleção não é autorização automática para publicação.
+- Fontes, nomes de arquivo de upload e dados internos ficam na administração/armazenamento privado, sem envio ao catálogo público. Verificar licença antes da reutilização comercial.
+
+Painel administrativo: desenvolvimento local autorizado conforme o plano Vercel existente + Supabase Auth/PostgreSQL/Storage. A implantação do painel, migração do público ou publicação de produtos exige autorização separada. Não alterar os quatro produtos e dezesseis imagens já publicados.
+
+
 ## Estado atual — Sagrada Família autorizada em 26/10/2026
 
 Usuário escolheu **fotos 1, 2, 3, 4 e 5**, definiu **foto 1 como capa** e autorizou a publicação. Produto Sagrada Família em Religiosos → Imagens religiosas grandes, após as bases e imagens pequenas. Nome e descrição comerciais, sem dimensões não confirmadas, preços ou dados de fabricação. Cinco WebP locais sem perdas, sem recorte/edição. Origens internas e numeração preservadas no cadastro; não enviadas ao navegador. Essa seleção específica de cinco fotos não deve ser reduzida ao padrão inicial de duas automaticamente.
@@ -100,11 +116,11 @@ Categorias e subcategorias têm IDs e `ordem` próprios no JSON. Toda subcategor
 
 O padrão vigente exige bandeja e porta-velas juntos em duas vistas reais. As seleções anteriores (foto com vela LED + bandeja superior; depois bandeja sozinha + porta-velas sozinho) foram preservadas, mas não devem ser promovidas automaticamente. Composição confirmada: somente bandeja e porta-velas. Não incluir outros acessórios nem inventar partes para removê-los. Rascunho em `internal/elongated-tray-review/product-draft.json` deve permanecer bloqueado até duas fotografias adequadas e aprovação final. Os arquivos não foram excluídos.
 
-## Padrão fotográfico vigente — duas fotografias do produto completo
+## Histórico superado — antigo padrão de duas fotografias
 
 Decisão de 26/10/2026, posterior à proposta de fotos separadas. **Esta regra substitui qualquer orientação anterior de usar uma foto de cada componente.** A proposta de bandeja sozinha + porta-velas sozinho não atende ao padrão e está suspensa. O histórico das propostas anteriores permanece em HISTORICO.md.
 
-**Padrão inicial: duas fotografias por produto.**
+**Critério histórico superado: duas fotografias por produto. Não aplicar; quantidade agora é livre.**
 
 1. **Foto principal:** produto inteiro, com todos os componentes incluídos na venda.
 2. **Foto secundária:** o mesmo produto inteiro, com os mesmos componentes, em outro ângulo real.
@@ -163,7 +179,7 @@ Decisão posterior de 26/10/2026. Para cada novo produto ou revisão de seleçã
 4. Só depois da escolha, avaliar junto ao usuário se há tratamento necessário e fiel. Nunca inventar vistas, modificar características reais ou recriar peças encobertas. Apresentar os resultados finais para aprovação específica antes de publicação/substituição.
 5. Manter o catálogo atual, arquivos e aprovações anteriores. Não publicar nem substituir fotografias sem autorização. A Pomba da Paz conserva suas cinco fotos aprovadas.
 
-O padrão pretendido para novos produtos continua sendo duas vistas do produto completo, mas é objetivo da seleção final, **não filtro para ocultar originais do usuário**. Esta instrução substitui a orientação anterior de não apresentar fotos com extras como candidatas à escolha. Todo material pode ser apresentado na conferência preliminar; o usuário decide o que aproveitar. Não chamar essa apresentação de fotografias finais prontas para publicação.
+Não existe quantidade fixa de fotografias por produto; publicar a seleção expressamente aprovada. A apresentação preliminar inclui todos os originais, sem filtros por fundo/ambientação. Esta instrução substitui a orientação anterior de não apresentar fotos com extras como candidatas à escolha. Todo material pode ser apresentado na conferência preliminar; o usuário decide o que aproveitar. Não chamar essa apresentação de fotografias finais prontas para publicação.
 
 Rodada atual: começar pela Bandeja Alongada, dez imagens da galeria na ordem original (1–10), mais a capa oficial (11). Nenhuma descartada ou editada. Aguardar a escolha antes de preparar tratamento. Depois apresentar a Bandeja Cruz também integralmente, sem modificar sua seleção publicada. Originais e mapa de numeração estão localmente em `internal/elongated-tray-review/galeria-completa.json`; arquivos de conferência permanecem fora do conteúdo público.
 
@@ -203,7 +219,7 @@ Todas as imagens efetivamente publicadas são locais em `demo/assets/`, com orig
 
 **Isso prepara o cadastro de dados, não uma interface de upload nem um importador web.** A administração autenticada continua não implementada; o envio manual atual é pelo chat e o recebimento/registro precisa ser executado no projeto. Importação automática futura exige rotas públicas permitidas e, se implementada como serviço, autenticação e validação no servidor. Não contornar HTTP 402/403, autenticação, desafio antibot ou restrições. Não adivinhar URLs de CDN nem usar imagens semelhantes. Verificar licença antes de reutilização comercial.
 
-Antes de solicitar download manual, investigar os dados públicos permitidos: HTML/JSON/OG quando acessíveis e índices públicos que possam indicar imagens do produto exato. Se a página não fornece metadados por bloqueio e não houver URL de imagem confirmada por uma fonte pública permitida, informar os testes efetivamente feitos e manter o produto pendente. Não declarar que inexiste qualquer outra imagem na internet: declarar a limitação de acesso observada. Primeiro apresentar todos os originais recuperados e aguardar seleção; nenhuma publicação sem aprovação.
+Sem prioridade entre links e uploads. Ao receber um link, investigar os dados públicos permitidos: HTML/JSON/OG quando acessíveis e índices públicos que possam indicar imagens do produto exato. Se a página não fornece metadados por bloqueio e não houver URL de imagem confirmada por uma fonte pública permitida, informar os testes efetivamente feitos e manter o produto pendente. Não declarar que inexiste qualquer outra imagem na internet: declarar a limitação de acesso observada. Primeiro apresentar todos os originais recuperados e aguardar seleção; nenhuma publicação sem aprovação.
 
 ### Resultado da investigação MakerWorld 2113086
 

@@ -15,10 +15,12 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 - Finalizar Religiosos antes dos Natalinos. Ordem por cadastro: porta-terços/bandejas/porta-velas → imagens pequenas → imagens grandes → kits religiosos.
 - Formato 2: cada produto tem subcategoria e possibilidade de participar de kits. Só preparar referências; não criar kits ou preços automaticamente, nem carrinho/pagamento. Preservar IDs e imagens.
 
-- Padrão fotográfico vigente: duas fotos do produto COMPLETO em ângulos reais diferentes. Bandeja e porta-velas juntos nas duas; nunca uma foto de cada componente. Remover extras só com fidelidade, sem inventar partes. Se faltarem originais adequados, bloquear cadastro e informar. Preservar seleções antigas aprovadas até autorização específica. Ver INSTRUCOES_CODEX.md e PROJETO.md.
+- Fotografias por link e upload têm o mesmo valor, inclusive Shopee. Aceitar fundos brancos e ambientações. Quantidade livre (uma ou mais aprovadas), sem reduzir galerias existentes; preservar originais. Ver regras vigentes no início de INSTRUCOES_CODEX.md e PROJETO.md.
 
-- Critério estrito para bandejas: SOMENTE bandeja e porta-velas, juntos e completos nas duas fotos; primeira em perspectiva, segunda preferencialmente superior. Fotos com extras não são seleção final. Se recorte/edição exigir inventar áreas ocultas, manter produto pendente; não publicar fotos inadequadas.
+- Não alterar características reais nem apresentar acessórios de ambientação como parte da venda. Não descartar previamente fotos por composição ou fundo. Produto novo é rascunho até aprovação.
 
-- Procedimento vigente: primeiro apresentar TODAS as imagens originais numeradas e com links, sem filtrar por acessórios; aguardar a escolha do usuário ANTES de recortar/editar/tratar. Depois avaliar juntos os tratamentos e pedir aprovação final antes de publicar/substituir. O padrão de duas fotos não limita a galeria preliminar de escolha.
+- Procedimento vigente: primeiro apresentar TODAS as imagens originais numeradas e com links, sem filtrar por acessórios; aguardar a escolha do usuário ANTES de recortar/editar/tratar. Depois avaliar juntos os tratamentos e pedir aprovação final antes de publicar/substituir. Não existe quantidade fixa na galeria final; a seleção e a ordem dependem do usuário.
 
 - Cadastro de múltiplas fontes: STLflix, MakerWorld, outras e uploads manuais. Não exigir URL externa para upload. Usar metadados internos de origem, arquivos locais aprovados e investigar caminhos públicos permitidos antes de pedir envio manual. Nunca contornar bloqueios; interface administrativa/importador web ainda não implementados.
+
+- Fontes previstas incluem STLflix, MakerWorld, PinkyWings e outras. Links e uploads são equivalentes. Painel local em desenvolvimento autorizado; não publicar implementação ou produtos sem aprovação.
