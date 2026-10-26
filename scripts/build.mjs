@@ -13,6 +13,29 @@ function commercial(value, label) {
   assert(!forbidden.test(value), `Informação interna ou URL em campo público: ${label}`);
 }
 
+// Legacy source fields remain valid; new records may use any public provider or manual uploads.
+function validateOrigin(internal, level, label) {
+  const origin = internal?.origem;
+  if (!origin) {
+    const legacy = level === 'product' ? internal?.pagina_origem : internal?.url_origem;
+    assert(typeof legacy === 'string' && legacy.trim().length > 0, `Origem interna ausente: ${label}`);
+    return;
+  }
+  if (origin.tipo === 'link') {
+    let url;
+    try { url = new URL(origin.url); } catch { throw new Error(`URL de origem inválida: ${label}`); }
+    assert(url.protocol === 'https:' && !url.username && !url.password, `Origem deve usar HTTPS sem credenciais: ${label}`);
+    return;
+  }
+  if (level === 'product') {
+    assert(origin.tipo === 'manual', `Tipo de origem do produto inválido: ${label}`);
+  } else {
+    assert(origin.tipo === 'upload', `Tipo de origem da imagem inválido: ${label}`);
+    assert(typeof origin.arquivo_original === 'string' && origin.arquivo_original.trim().length > 0 && !/[\\/]/.test(origin.arquivo_original), `Nome do arquivo enviado inválido: ${label}`);
+    assert(/^\d{4}-\d{2}-\d{2}$/.test(origin.recebida_em ?? ''), `Data de recebimento ausente: ${label}`);
+  }
+}
+
 function card(product, category, index) {
   const photo = product.imagens[0];
   return `<article class="product" id="${product.id}"${index ? ' style="margin-top:24px"' : ''}><button type="button" class="photo photo-open" data-open-product="dialog-${product.id}" aria-label="Ver detalhes da ${escape(product.nome)}"><img src="${photo.arquivo}" width="${photo.largura}" height="${photo.altura}" alt="${escape(photo.alt)}" ${index ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async"></button><div class="info"><span class="eyebrow">${escape(category.nome)}</span><h3>${escape(product.nome)}</h3><p class="muted">${escape(product.descricao)}</p><button class="button" data-open-product="dialog-${product.id}" type="button">Conhecer a peça <span aria-hidden="true">↗</span></button><p class="pending">Contato pelo WhatsApp disponível após configuração.</p></div></article>`;
@@ -61,14 +84,14 @@ export async function buildCatalog(root = projectRoot) {
     commercial(product.nome, `${product.id}.nome`);
     commercial(product.descricao, `${product.id}.descricao`);
     assert(Array.isArray(product.imagens) && product.imagens.length > 0, `Produto sem imagens: ${product.id}`);
-    assert(typeof product.interno?.pagina_origem === 'string', `Origem interna ausente: ${product.id}`);
+    validateOrigin(product.interno, 'product', product.id);
     for (const image of product.imagens) {
       assert(typeof image.arquivo === 'string' && /^assets\/[a-z0-9]+(?:[-a-z0-9]*)\.webp$/.test(image.arquivo), `Caminho de imagem inválido: ${image.arquivo}`);
       commercial(image.alt, `${product.id}.imagem.alt`);
       commercial(image.rotulo, `${product.id}.imagem.rotulo`);
       assert(Number.isInteger(image.largura) && image.largura > 0 && Number.isInteger(image.altura) && image.altura > 0, 'Dimensões inválidas');
       assert(/^\d{4}-\d{2}-\d{2}$/.test(image.interno?.aprovada_em ?? ''), `Imagem sem aprovação: ${image.arquivo}`);
-      assert(typeof image.interno?.url_origem === 'string', `Origem da imagem ausente: ${image.arquivo}`);
+      validateOrigin(image.interno, 'image', image.arquivo);
       const source = await realpath(path.join(root, 'demo', image.arquivo));
       assert(source.startsWith(assetRoot + path.sep), `Imagem fora da pasta de assets: ${image.arquivo}`);
       const bytes = await readFile(source);

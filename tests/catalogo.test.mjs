@@ -171,3 +171,36 @@ test('subcategoria ausente, duplicada ou de outra categoria é rejeitada', async
     await assert.rejects(buildCatalog(f.directory));
   }
 });
+
+test('metadados aceitam links de diferentes fontes sem expor plataforma ou origem', async t => {
+  const f = await fixture(t);
+  for (const [index, platform] of ['stlflix', 'makerworld', 'outra-fonte'].entries()) {
+    const product = f.catalog.produtos[index];
+    delete product.interno.pagina_origem;
+    product.interno.origem = {tipo:'link', plataforma:platform, url:`https://example.com/${platform}/produto`};
+    for (const image of product.imagens) {
+      delete image.interno.url_origem;
+      image.interno.origem = {tipo:'link', url:`https://example.com/${platform}/foto.png`};
+    }
+  }
+  await f.save();
+  assert.deepEqual(await buildCatalog(f.directory), f.expected);
+  assert.doesNotMatch(await f.html(), /makerworld|stlflix|outra-fonte|example\.com/);
+});
+
+test('metadados de upload manual dispensam URL mas exigem identificação, arquivo local e aprovação', async t => {
+  const f = await fixture(t);
+  const product = f.catalog.produtos[0];
+  delete product.interno.pagina_origem;
+  product.interno.origem = {tipo:'manual', descricao:'Acervo próprio'};
+  for (const image of product.imagens) {
+    delete image.interno.url_origem;
+    image.interno.origem = {tipo:'upload', arquivo_original:'fotografia-original.png', recebida_em:'2026-10-26'};
+  }
+  await f.save();
+  assert.deepEqual(await buildCatalog(f.directory), f.expected);
+  assert.doesNotMatch(await f.html(), /fotografia-original|recebida_em|Acervo próprio/);
+  delete product.imagens[0].interno.origem.arquivo_original;
+  await f.save();
+  await assert.rejects(buildCatalog(f.directory), /Nome do arquivo enviado inválido/);
+});

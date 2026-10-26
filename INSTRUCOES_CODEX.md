@@ -151,3 +151,27 @@ Decisão posterior de 26/10/2026. Para cada novo produto ou revisão de seleçã
 O padrão pretendido para novos produtos continua sendo duas vistas do produto completo, mas é objetivo da seleção final, **não filtro para ocultar originais do usuário**. Esta instrução substitui a orientação anterior de não apresentar fotos com extras como candidatas à escolha. Todo material pode ser apresentado na conferência preliminar; o usuário decide o que aproveitar. Não chamar essa apresentação de fotografias finais prontas para publicação.
 
 Rodada atual: começar pela Bandeja Alongada, dez imagens da galeria na ordem original (1–10), mais a capa oficial (11). Nenhuma descartada ou editada. Aguardar a escolha antes de preparar tratamento. Depois apresentar a Bandeja Cruz também integralmente, sem modificar sua seleção publicada. Originais e mapa de numeração estão localmente em `internal/elongated-tray-review/galeria-completa.json`; arquivos de conferência permanecem fora do conteúdo público.
+
+## Fontes diversas e fotografias manuais — 26/10/2026
+
+O catálogo aceita produtos provenientes de **STLflix, MakerWorld e outras fontes**, além de fotografias próprias enviadas manualmente. Não vincular o cadastro a um fornecedor único nem exigir URL externa para uma fotografia enviada pelo usuário. Reconhecer a fonte pelo link informado; o modelo MakerWorld 2113086 não é um produto STLflix.
+
+O build já aceita metadados de procedência genéricos, mantendo compatibilidade com os registros atuais:
+
+- Produto por link: `interno.origem = {"tipo":"link","plataforma":"makerworld","url":"https://..."}`. O nome da plataforma é informativo, não uma lista limitada a dois serviços.
+- Produto cadastrado manualmente: `interno.origem = {"tipo":"manual","descricao":"Acervo próprio"}`.
+- Imagem obtida por link: `imagem.interno.origem = {"tipo":"link","url":"https://..."}`.
+- Imagem enviada manualmente: `imagem.interno.origem = {"tipo":"upload","arquivo_original":"foto.jpg","recebida_em":"AAAA-MM-DD"}`. Não inventar URL de origem. Preservar o original recebido, converter para WebP após seleção/aprovação e registrar arquivo local, hash, dimensões e data de aprovação como nas demais fotos.
+- Campos legados `pagina_origem` e `url_origem` continuam aceitos; não é necessário reescrever cadastros/imagens já aprovados.
+
+Todas as imagens efetivamente publicadas são locais em `demo/assets/`, com origem interna e aprovação, e o build continua enviando somente campos comerciais e WebP de produtos ativos para `dist`. Nenhum link/fornecedor/nome de arquivo original de upload deve chegar ao catálogo público.
+
+**Isso prepara o cadastro de dados, não uma interface de upload nem um importador web.** A administração autenticada continua não implementada; o envio manual atual é pelo chat e o recebimento/registro precisa ser executado no projeto. Importação automática futura exige rotas públicas permitidas e, se implementada como serviço, autenticação e validação no servidor. Não contornar HTTP 402/403, autenticação, desafio antibot ou restrições. Não adivinhar URLs de CDN nem usar imagens semelhantes. Verificar licença antes de reutilização comercial.
+
+Antes de solicitar download manual, investigar os dados públicos permitidos: HTML/JSON/OG quando acessíveis e índices públicos que possam indicar imagens do produto exato. Se a página não fornece metadados por bloqueio e não houver URL de imagem confirmada por uma fonte pública permitida, informar os testes efetivamente feitos e manter o produto pendente. Não declarar que inexiste qualquer outra imagem na internet: declarar a limitação de acesso observada. Primeiro apresentar todos os originais recuperados e aguardar seleção; nenhuma publicação sem aprovação.
+
+### Resultado da investigação MakerWorld 2113086
+
+A página pública do modelo respondeu HTTP 402 com “Please contact the site owner for access.” O corpo não contém HTML, Open Graph ou galeria. `/robots.txt` e `/sitemap-0.xml` também terminaram em 402. `/sitemap.xml`, o índice público anunciado `/sitemaps/index.xml` e a primeira página pública de modelos `/sitemaps/models.xml?p=0` responderam 200. Os índices consultados contêm links de páginas, sem URLs de fotografia do produto confirmado. Não se percorreu o catálogo inteiro nem se tentou contornar o bloqueio do modelo, autenticação ou adivinhar arquivos. Nenhuma URL original de imagem do modelo 2113086 foi confirmada por essas vias.
+
+Produto permanece pendente; o próximo passo disponível é o usuário fornecer manualmente os originais ou links diretos de imagens desse modelo aos quais tenha acesso permitido. Nenhuma imagem foi substituída/gerada e nenhum produto novo foi publicado nesta investigação.

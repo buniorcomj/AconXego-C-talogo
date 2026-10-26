@@ -106,3 +106,9 @@ Commit `05b9799` enviado e confirmado na main do GitHub. Vercel concluída: http
 ## 26/10/2026 — conferência de link MakerWorld, acesso negado
 
 Recebido modelo 2113086, perfil 2286312. Acesso público respondeu “Please contact the site owner for access.” Não recuperadas fotografias; sem bypass, edição, alteração do catálogo ou publicação. Produto mantido pendente para obtenção de imagens originais por meio permitido. Apenas registro local, sem push/deploy nesta etapa.
+
+## 26/10/2026 — fontes diversas e investigação pública do MakerWorld
+
+Confirmada fonte MakerWorld para modelo 2113086. Página e robots responderam 402; sitemap público e índice anunciado responderam 200. A primeira página pública de modelos consultada contém URLs de páginas, sem fotografias confirmadas do produto; nenhum arquivo original recuperado. Não houve bypass, procura por credenciais, tentativa de derrotar desafio ou adivinhação de URLs. Modelo mantido pendente para fornecimento manual de originais/links diretos permitidos.
+
+Documentado suporte a STLflix, MakerWorld, outras fontes e envio manual. Build passa a aceitar metadados genéricos de origem por link ou upload, sem exigir URL para uploads, preservando campos legados e arquivos locais aprovados. Não implementada interface administrativa de upload/importação. Doze testes passaram, incluindo diferentes provedores e upload sem URL com identificação do arquivo; origens não vazam na saída. Quatro produtos e dezesseis imagens existentes intactos. Alterações apenas locais, sem push ou deploy por instrução atual do usuário.

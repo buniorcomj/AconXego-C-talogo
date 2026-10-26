@@ -20,3 +20,5 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 - Critério estrito para bandejas: SOMENTE bandeja e porta-velas, juntos e completos nas duas fotos; primeira em perspectiva, segunda preferencialmente superior. Fotos com extras não são seleção final. Se recorte/edição exigir inventar áreas ocultas, manter produto pendente; não publicar fotos inadequadas.
 
 - Procedimento vigente: primeiro apresentar TODAS as imagens originais numeradas e com links, sem filtrar por acessórios; aguardar a escolha do usuário ANTES de recortar/editar/tratar. Depois avaliar juntos os tratamentos e pedir aprovação final antes de publicar/substituir. O padrão de duas fotos não limita a galeria preliminar de escolha.
+
+- Cadastro de múltiplas fontes: STLflix, MakerWorld, outras e uploads manuais. Não exigir URL externa para upload. Usar metadados internos de origem, arquivos locais aprovados e investigar caminhos públicos permitidos antes de pedir envio manual. Nunca contornar bloqueios; interface administrativa/importador web ainda não implementados.
