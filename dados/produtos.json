@@ -261,6 +261,125 @@
         ],
         "observacoes": "Usuário autorizou publicar as quatro remanescentes após apresentar todos os originais e excluir as demais. Seleção específica autorizada em vez do padrão inicial de duas fotos completas; não editar nem reduzir automaticamente. Foto 1 tem vela LED de ambientação, que não integra a oferta. Fotos 4, 5 e 6 são detalhes selecionados expressamente. Sem kits ou acessórios adicionais incluídos."
       }
+    },
+    {
+      "id": "sagrada-familia",
+      "nome": "Sagrada Família",
+      "categoria": "religiosos",
+      "subcategoria": "imagens-grandes",
+      "descricao": "Representação da Sagrada Família, símbolo de amor, união e fé para a decoração.",
+      "situacao": "ativo",
+      "ordem": 1,
+      "tipo": "individual",
+      "participacao_kits": {
+        "permitida": true,
+        "papel": "imagem"
+      },
+      "componentes": [],
+      "imagens": [
+        {
+          "arquivo": "assets/sagrada-familia-01.webp",
+          "alt": "Sagrada Família em branco com detalhes dourados, vista de frente.",
+          "rotulo": "Foto 1",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/The_Holy_Family_1_0af0425fd3.png",
+            "numero_original": 1,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "68c8fc753b51a1ad8398510e5fe52755823b55f307504ca0f7c4414ba3896238",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem licença.",
+            "tratamento": "Conversão WebP sem perdas, sem recorte ou edição."
+          }
+        },
+        {
+          "arquivo": "assets/sagrada-familia-02.webp",
+          "alt": "Sagrada Família em branco com detalhes dourados, vista em perspectiva.",
+          "rotulo": "Foto 2",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/The_Holy_Family_2_2dd3729c3f.png",
+            "numero_original": 2,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "f155ddbaaca22adeaf9363d04a9c76a994f504c04158ca9d083d8a8125bda993",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem licença.",
+            "tratamento": "Conversão WebP sem perdas, sem recorte ou edição."
+          }
+        },
+        {
+          "arquivo": "assets/sagrada-familia-03.webp",
+          "alt": "Sagrada Família em branco com detalhes dourados, apresentada sobre fundo cinza.",
+          "rotulo": "Foto 3",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/The_Holy_Family_3_f43c4b397a.png",
+            "numero_original": 3,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "182b908650e6c57d14ed4922c24c38b4fb3fc4a5e8eb568ccfd9dea4770ae4bf",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem licença.",
+            "tratamento": "Conversão WebP sem perdas, sem recorte ou edição."
+          }
+        },
+        {
+          "arquivo": "assets/sagrada-familia-04.webp",
+          "alt": "Sagrada Família em branco com detalhes dourados, vista pelo outro lado.",
+          "rotulo": "Foto 4",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/The_Holy_Family_4_6710d54722.png",
+            "numero_original": 4,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "94c2974cd1b369bb9eadde98764e59acebb626be5bba64406e3fec71a541fb34",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem licença.",
+            "tratamento": "Conversão WebP sem perdas, sem recorte ou edição."
+          }
+        },
+        {
+          "arquivo": "assets/sagrada-familia-05.webp",
+          "alt": "Sagrada Família vista de costas, com detalhes dourados.",
+          "rotulo": "Foto 5",
+          "largura": 1080,
+          "altura": 1350,
+          "interno": {
+            "url_origem": "https://s3.us-east-2.amazonaws.com/static.stlflix.com/The_Holy_Family_5_59cd09f401.png",
+            "numero_original": 5,
+            "recuperada_em": "2026-10-26",
+            "aprovada_em": "2026-10-26",
+            "sha256": "6dd2b85af16ee27dd1c9556c620cdbdadfc5e73811fcd1d75f756f3ed57b48f1",
+            "licenca": "Verificar licença de uso comercial; aprovação visual e autorização de publicar não substituem licença.",
+            "tratamento": "Conversão WebP sem perdas, sem recorte ou edição."
+          }
+        }
+      ],
+      "interno": {
+        "pagina_origem": "https://platform.stlflix.com/pt-BR/product/the-holy-family",
+        "aprovacao_publicacao_em": "2026-10-26",
+        "selecionadas_pelo_usuario": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "imagem_capa_original": 1,
+        "excluidas_pelo_usuario": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "observacoes": "Usuário selecionou imagens 1 a 5 e capa 1, depois autorizou publicar. Preservar todas as cinco; não reduzir automaticamente para duas. Subcategoria grandes baseada na dimensão aproximada da fonte (22 cm), sem anunciar dimensões da oferta. Sem kit, preço ou características de produção no catálogo."
+      }
     }
   ],
   "subcategorias": [

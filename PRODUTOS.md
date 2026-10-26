@@ -1,5 +1,12 @@
 # Produtos AconXego
 
+## Estado atual — Sagrada Família autorizada em 26/10/2026
+
+Usuário escolheu **fotos 1, 2, 3, 4 e 5**, definiu **foto 1 como capa** e autorizou a publicação. Produto Sagrada Família em Religiosos → Imagens religiosas grandes, após as bases e imagens pequenas. Nome e descrição comerciais, sem dimensões não confirmadas, preços ou dados de fabricação. Cinco WebP locais sem perdas, sem recorte/edição. Origens internas e numeração preservadas no cadastro; não enviadas ao navegador. Essa seleção específica de cinco fotos não deve ser reduzida ao padrão inicial de duas automaticamente.
+
+Cadastro passa a quatro produtos e dezesseis imagens; três produtos anteriores e suas onze imagens permanecem intactos. Envio e implantação desta etapa serão confirmados em HISTORICO.md. As notas anteriores sobre pendência de seleção/publicação são históricas, superadas pela autorização expressa atual.
+
+
 ## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026
 
 Após revisar todos os originais e excluir 2, 3, 7, 8, 9, 10 e 11, o usuário autorizou publicar as **quatro imagens 1, 4, 5 e 6**, nessa ordem, sem recortes ou edições. A foto 1 é a principal; as demais aparecem nos detalhes. Essa escolha específica de quatro fotos prevalece, para este produto, sobre as propostas e bloqueios anteriores e sobre o padrão inicial de duas. Não reduzir ou substituir a seleção automaticamente.
@@ -18,8 +25,9 @@ A fonte oficial e editável é **`dados/produtos.json`**, versionada no Git. Est
 | `bandeja-cruz` | Bandeja Cruz com Porta-Velas | Artigos Religiosos | ativo | Uma peça para compor a decoração religiosa. | `bandeja-cruz-principal.webp` e `bandeja-cruz-secundaria.webp` |
 | `bandeja-alongada` | Bandeja Alongada com Porta-Velas | Artigos Religiosos | ativo | Bandeja alongada com porta-velas para compor a decoração. Conjunto composto somente por bandeja e porta-velas; vela LED não incluída. | `bandeja-alongada-01.webp`, `bandeja-alongada-04.webp`, `bandeja-alongada-05.webp`, `bandeja-alongada-06.webp` |
 | `pomba-da-paz` | Pomba da Paz | Artigos Religiosos | ativo | Um símbolo de paz para compor a decoração e presentear com significado. | `pomba-da-paz-01.webp` até `pomba-da-paz-05.webp` |
+| `sagrada-familia` | Sagrada Família | Artigos Religiosos | ativo | Representação da Sagrada Família, símbolo de amor, união e fé para a decoração. | `sagrada-familia-01.webp` até `sagrada-familia-05.webp` |
 
-Os onze WebP têm 1080 × 1350 pixels. Aprovações e autorização de publicação registradas em 26/10/2026. Os produtos anteriores conservam suas descrições e imagens; a Alongada entra com seleção própria de quatro fotografias. Não supor inclusão de vela ou outros acessórios na bandeja. A Pomba da Paz é independente da bandeja.
+Os dezesseis WebP têm 1080 × 1350 pixels. Aprovações e autorização de publicação registradas em 26/10/2026. Os produtos anteriores conservam suas descrições e imagens; a Alongada entra com seleção própria de quatro fotografias. Não supor inclusão de vela ou outros acessórios na bandeja. A Pomba da Paz é independente da bandeja.
 
 Categorias: `religiosos` → Artigos Religiosos; `natalinos` → Coleção Natalina. Não criar produtos natalinos sem material real e aprovação.
 
