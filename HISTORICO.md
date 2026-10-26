@@ -82,3 +82,7 @@ Usuário retirou também 8, 9, 10 e 11; restam 1, 4, 5 e 6. Mantidos originais e
 ## 26/10/2026 — v0.6.0, publicação da Bandeja Alongada autorizada
 
 Após exclusões explícitas, o usuário autorizou publicar a seleção restante 1, 4, 5 e 6, sem editar fotos. Cadastro individual Bandeja Alongada com Porta-Velas em Religiosos → Porta-terços, bandejas e porta-velas; ordem 2, depois da Bandeja Cruz e antes das imagens pequenas. Principal 1, quatro imagens na galeria. Essa autorização específica supera as seleções pendentes e conserva os quatro originais, sem impor duas imagens por automatismo. Apenas bandeja e porta-velas vendidos; descrição explicita vela LED não incluída. Não foram criados kits, preços, carrinho ou pagamentos. Bandeja Cruz e cinco fotos da Pomba da Paz preservadas. Dez testes passaram; build gera três produtos e onze WebP, sem origens ou documentos públicos. Commit/push e resultado Vercel serão verificados a seguir.
+
+### v0.6.0 — implantação confirmada
+
+Commit `d6ac145` enviado e confirmado na main do GitHub. Vercel concluída: https://vercel.com/acon-xego/aconxegocatalogo/2kcqHioBNJMjUre5bKMcQEBdoJGy. Site https://aconxegocatalogo.vercel.app verificado: HTML igual ao build, onze WebP públicos idênticos aos arquivos locais aprovados, três produtos, principal da Alongada original 1 e galeria em ordem 1/4/5/6. Galerias completas de 2/4/5 fotos, abertura/fechamento e layout testados em 390px e 1440px, sem erros JavaScript nem overflow. Produtos anteriores intactos; nenhuma foto excluída ou editada. Registro posterior apenas documental.

@@ -6,7 +6,7 @@ Após revisar todos os originais e excluir 2, 3, 7, 8, 9, 10 e 11, o usuário au
 
 Composição comercial: somente bandeja e porta-velas. Vela LED visível na foto 1 é de ambientação e não integra a oferta. Descrição comercial explicita essa exclusão. Os dois produtos anteriores permanecem intactos; Pomba da Paz mantém cinco fotografias. Origens e numeração original constam somente dos campos internos do cadastro, nunca da publicação.
 
-Cadastro definitivo atualizado para três produtos e onze imagens. Envio/implantação desta inclusão ainda serão verificados; consultar o último registro de HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
+Cadastro definitivo com três produtos e onze imagens, enviado à main no commit `d6ac145`. Vercel concluída e URL pública verificada em celular e computador; consultar HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
 
 
 A fonte oficial e editável é **`dados/produtos.json`**, versionada no Git. Este documento explica o cadastro; não manter uma segunda lista divergente. Origens por fotografia, datas de aprovação e SHA-256 estão somente no cadastro de build, nunca no HTML público.
