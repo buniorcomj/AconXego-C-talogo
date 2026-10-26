@@ -166,3 +166,7 @@ Retirar **2, 3 e 7** da seleção, mantendo os arquivos originais e a numeraçã
 ### Atualização da seleção da Bandeja Alongada — 26/10/2026
 
 O usuário retirou também **8, 9, 10 e 11**. Exclusões acumuladas: **2, 3, 7, 8, 9, 10 e 11**. Permanecem para escolha **1, 4, 5 e 6**, na numeração original. Arquivos preservados; sem escolha final, edição ou autorização de publicação implícita.
+
+### Novo produto em conferência — Sagrada Família (26/10/2026)
+
+Recebida página original `the-holy-family`; recuperados onze arquivos da galeria na ordem original (1–11) e capa oficial (12), sem descarte ou edição. Nome comercial proposto: Sagrada Família. Categoria Religiosos; subcategoria proposta Imagens religiosas grandes, ainda a confirmar com a loja. Nenhuma dimensão foi publicada como especificação comercial. O usuário deve escolher os números antes de qualquer tratamento. Rascunho e mapa completo local em `internal/holy-family-review/`; origem permanece fora do conteúdo público. Sem cadastro definitivo, commit de imagens ou publicação até aprovação. Todos os três produtos já publicados permanecem intactos.

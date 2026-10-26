@@ -86,3 +86,7 @@ Após exclusões explícitas, o usuário autorizou publicar a seleção restante
 ### v0.6.0 — implantação confirmada
 
 Commit `d6ac145` enviado e confirmado na main do GitHub. Vercel concluída: https://vercel.com/acon-xego/aconxegocatalogo/2kcqHioBNJMjUre5bKMcQEBdoJGy. Site https://aconxegocatalogo.vercel.app verificado: HTML igual ao build, onze WebP públicos idênticos aos arquivos locais aprovados, três produtos, principal da Alongada original 1 e galeria em ordem 1/4/5/6. Galerias completas de 2/4/5 fotos, abertura/fechamento e layout testados em 390px e 1440px, sem erros JavaScript nem overflow. Produtos anteriores intactos; nenhuma foto excluída ou editada. Registro posterior apenas documental.
+
+## 26/10/2026 — início da conferência da Sagrada Família
+
+Novo link `the-holy-family` recebido. Onze imagens da galeria e capa oficial como número 12 recuperadas publicamente e conferidas; nenhuma excluída, recortada ou editada. Aguardando seleção do usuário. Nenhum produto ou imagem existente alterado; cadastro definitivo e site continuam com três produtos e onze imagens. Apenas registro local da conferência, sem push/deploy nesta etapa.
