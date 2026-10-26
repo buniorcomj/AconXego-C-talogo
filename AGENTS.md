@@ -23,4 +23,6 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 
 - Cadastro de múltiplas fontes: STLflix, MakerWorld, outras e uploads manuais. Não exigir URL externa para upload. Usar metadados internos de origem, arquivos locais aprovados e investigar caminhos públicos permitidos antes de pedir envio manual. Nunca contornar bloqueios; interface administrativa/importador web ainda não implementados.
 
-- Fontes previstas incluem STLflix, MakerWorld, PinkyWings e outras. Links e uploads são equivalentes. Painel local em desenvolvimento autorizado; não publicar implementação ou produtos sem aprovação.
+- Fontes previstas incluem STLflix, MakerWorld, PinkyWings e outras. Links e uploads são equivalentes. Supabase, banco, login e painel estão adiados: não implementar agora. Continuar pelo Codex; preservar plano em PLANO_ADMINISTRATIVO.md e não publicar produtos sem aprovação.
+
+- Decisão mais recente: priorizar concluir produtos religiosos e depois natalinos. Apresentar todos os originais por link ou upload, aguardar seleção e autorização de publicação. Não desenvolver a administração até nova autorização explícita.

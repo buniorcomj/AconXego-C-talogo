@@ -13,7 +13,7 @@ Decisão de 26/10/2026, posterior aos critérios de duas fotos. **Esta seção s
 - Produtos novos ficam como rascunho até aprovação, incluindo os que dependem de uploads. Seleção não é autorização automática para publicação.
 - Fontes, nomes de arquivo de upload e dados internos ficam na administração/armazenamento privado, sem envio ao catálogo público. Verificar licença antes da reutilização comercial.
 
-Painel administrativo: desenvolvimento local autorizado conforme o plano Vercel existente + Supabase Auth/PostgreSQL/Storage. A implantação do painel, migração do público ou publicação de produtos exige autorização separada. Não alterar os quatro produtos e dezesseis imagens já publicados.
+Painel administrativo, Supabase, banco de dados e login **ADIADOS por decisão posterior do usuário em 26/10/2026**. Não implementar ou provisionar agora. Continuar o catálogo pelo Codex com links e uploads diretos, sem alterar os quatro produtos/dezesseis fotos publicados sem autorização. Concluir Religiosos antes de Natalinos. Preservar o plano em PLANO_ADMINISTRATIVO.md para retomada futura, condicionada a nova autorização.
 
 
 ## Estado atual — Sagrada Família autorizada em 26/10/2026
@@ -62,6 +62,7 @@ Site estático em HTML, CSS e JavaScript nativos; Node.js para build e testes. N
 | `vercel.json` | Build e pasta pública da Vercel. |
 | `DEPLOYMENT.md` | Procedimento de validação e implantação. |
 | `HISTORICO.md` | Histórico de versões, decisões e implantações. |
+| `PLANO_ADMINISTRATIVO.md` | Arquitetura e custos de referência para retomada futura; execução adiada. |
 | `INSTRUCOES_CODEX.md`, `AGENTS.md` | Regras para retomar em outra sessão. |
 | `internal/` | Material local de conferência legado, ignorado no Git. Não é recuperável por clone; não depender dele para os produtos ativos. |
 
