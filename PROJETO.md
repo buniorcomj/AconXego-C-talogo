@@ -4,7 +4,7 @@
 
 Usuário escolheu **fotos 1, 2, 3, 4 e 5**, definiu **foto 1 como capa** e autorizou a publicação. Produto Sagrada Família em Religiosos → Imagens religiosas grandes, após as bases e imagens pequenas. Nome e descrição comerciais, sem dimensões não confirmadas, preços ou dados de fabricação. Cinco WebP locais sem perdas, sem recorte/edição. Origens internas e numeração preservadas no cadastro; não enviadas ao navegador. Essa seleção específica de cinco fotos não deve ser reduzida ao padrão inicial de duas automaticamente.
 
-Cadastro passa a quatro produtos e dezesseis imagens; três produtos anteriores e suas onze imagens permanecem intactos. Envio e implantação desta etapa serão confirmados em HISTORICO.md. As notas anteriores sobre pendência de seleção/publicação são históricas, superadas pela autorização expressa atual.
+Cadastro publicado com quatro produtos e dezesseis imagens; três produtos anteriores e suas onze imagens permanecem intactos. Commit funcional `05b9799` confirmado na main, Vercel concluída e URL pública verificada em celular e computador; ver HISTORICO.md. As notas anteriores sobre pendência de seleção/publicação são históricas, superadas pela autorização expressa atual.
 
 
 ## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026
@@ -16,7 +16,7 @@ Composição comercial: somente bandeja e porta-velas. Vela LED visível na foto
 Cadastro definitivo com três produtos e onze imagens, enviado à main no commit `d6ac145`. Vercel concluída e URL pública verificada em celular e computador; consultar HISTORICO.md. As descrições anteriores de seleção pendente são etapas históricas, não impedimentos atuais após esta autorização expressa.
 
 
-Atualizado em 26/10/2026 (America/Sao_Paulo). Versão **v0.6.0 publicada**, commit funcional `d6ac145`, com três produtos e onze imagens. Os dois produtos anteriores e suas sete imagens permanecem preservados. Implantação e URL pública verificadas em 26/10/2026; consultar HISTORICO.md para atualizações.
+Atualizado em 26/10/2026 (America/Sao_Paulo). Versão **v0.7.0 publicada**, commit funcional `05b9799`, com quatro produtos e dezesseis imagens. Produtos anteriores e suas fotografias permanecem preservados. Implantação e URL pública verificadas em 26/10/2026; consultar HISTORICO.md para atualizações.
 
 ## Identidade e objetivo
 

@@ -4,7 +4,7 @@
 
 Usuário escolheu **fotos 1, 2, 3, 4 e 5**, definiu **foto 1 como capa** e autorizou a publicação. Produto Sagrada Família em Religiosos → Imagens religiosas grandes, após as bases e imagens pequenas. Nome e descrição comerciais, sem dimensões não confirmadas, preços ou dados de fabricação. Cinco WebP locais sem perdas, sem recorte/edição. Origens internas e numeração preservadas no cadastro; não enviadas ao navegador. Essa seleção específica de cinco fotos não deve ser reduzida ao padrão inicial de duas automaticamente.
 
-Cadastro passa a quatro produtos e dezesseis imagens; três produtos anteriores e suas onze imagens permanecem intactos. Envio e implantação desta etapa serão confirmados em HISTORICO.md. As notas anteriores sobre pendência de seleção/publicação são históricas, superadas pela autorização expressa atual.
+Cadastro publicado com quatro produtos e dezesseis imagens; três produtos anteriores e suas onze imagens permanecem intactos. Commit funcional `05b9799` confirmado na main, Vercel concluída e URL pública verificada em celular e computador; ver HISTORICO.md. As notas anteriores sobre pendência de seleção/publicação são históricas, superadas pela autorização expressa atual.
 
 
 ## Estado atual — autorização de publicação da Bandeja Alongada em 26/10/2026

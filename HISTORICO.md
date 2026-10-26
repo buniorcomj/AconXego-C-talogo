@@ -98,3 +98,7 @@ Usuário excluiu da seleção 6, 7, 8, 9, 10, 11 e 12. Permanecem 1 a 5, com cap
 ## 26/10/2026 — v0.7.0, publicação da Sagrada Família autorizada
 
 Após apresentar todos os originais, usuário excluiu 6 a 12, manteve 1 a 5 e definiu capa 1. Autorização expressa de publicação recebida. Cadastrada Sagrada Família em Artigos Religiosos → Imagens religiosas grandes, cinco fotos locais WebP sem perdas, sem edições. Sem preço, dimensão comercial não confirmada ou características de fabricação. Os três produtos anteriores e onze imagens preservados. Cadastro com quatro produtos e dezesseis imagens. Aprovação/publicação específica não reduz automaticamente a galeria ao padrão inicial de duas. Build, testes e implantação serão verificados nesta etapa.
+
+### v0.7.0 — implantação confirmada
+
+Commit `05b9799` enviado e confirmado na main do GitHub. Vercel concluída: https://vercel.com/acon-xego/aconxegocatalogo/EgRo7AEsP7aZ1sGphvrZBTWdutcz. Site https://aconxegocatalogo.vercel.app verificado: HTML igual ao build; dezesseis arquivos WebP públicos idênticos aos locais aprovados, sem URLs/fontes internas no HTML. Quatro produtos, Sagrada Família com foto 1 na vitrine e galeria de cinco imagens em ordem 1 a 5. Galerias dos quatro produtos testadas em 390px e 1440px, com abertura/fechamento e carregamento das fotos, sem erros JS ou overflow. Três produtos e onze imagens anteriores preservados. Registro posterior apenas documental.
