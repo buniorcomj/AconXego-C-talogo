@@ -16,3 +16,5 @@ Antes de editar este projeto, ler **INSTRUCOES_CODEX.md**, **PROJETO.md**, **PRO
 - Formato 2: cada produto tem subcategoria e possibilidade de participar de kits. Só preparar referências; não criar kits ou preços automaticamente, nem carrinho/pagamento. Preservar IDs e imagens.
 
 - Padrão fotográfico vigente: duas fotos do produto COMPLETO em ângulos reais diferentes. Bandeja e porta-velas juntos nas duas; nunca uma foto de cada componente. Remover extras só com fidelidade, sem inventar partes. Se faltarem originais adequados, bloquear cadastro e informar. Preservar seleções antigas aprovadas até autorização específica. Ver INSTRUCOES_CODEX.md e PROJETO.md.
+
+- Critério estrito para bandejas: SOMENTE bandeja e porta-velas, juntos e completos nas duas fotos; primeira em perspectiva, segunda preferencialmente superior. Fotos com extras não são seleção final. Se recorte/edição exigir inventar áreas ocultas, manter produto pendente; não publicar fotos inadequadas.

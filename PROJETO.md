@@ -105,7 +105,7 @@ Decisão de 26/10/2026, posterior à proposta de fotos separadas. **Esta regra s
 
 ### Bandejas com porta-velas
 
-Mostrar bandeja e porta-velas **juntos em ambas as fotos**. Priorizar uma vista frontal/em perspectiva e outra superior. Não substituir por uma fotografia somente da bandeja e outra somente do porta-velas. Para a Bandeja Alongada, a composição individual é somente bandeja e porta-velas: sem imagens religiosas, terços, vela LED ou outros acessórios não incluídos na oferta.
+Cada fotografia deve mostrar **SOMENTE a bandeja e o porta-velas daquele produto, JUNTOS e completos**. A primeira fotografia deve apresentar o conjunto em perspectiva. A segunda deve mostrar o mesmo conjunto em outro ângulo real, preferencialmente em vista superior. Não permitir imagens religiosas, estátuas, terços, vela LED ou outros acessórios não pertencentes à oferta. Não substituir por uma fotografia somente da bandeja e outra somente do porta-velas. Para a Bandeja Alongada, a composição individual é somente bandeja e porta-velas: sem imagens religiosas, terços, vela LED ou outros acessórios não incluídos na oferta.
 
 Remover visualmente outros produtos da composição original somente se for possível preservar fielmente as peças reais, sem mudar cores, proporções, formato, textura, detalhes ou acessórios próprios. Preferir originais adequados. Uma separação/corte não pode esconder componentes incluídos ou inventar áreas encobertas. Não reconstruir partes ocultas, simular novo ângulo, gerar fotografia fictícia, fazer composição que sugira foto original ou usar imagem de produto semelhante. Se a remoção exigir inventar características da peça, parar e informar a limitação; solicitar originais adequados ou uma alternativa expressamente aprovada.
 
@@ -132,3 +132,9 @@ Aplicar o padrão aos próximos produtos e auditar os existentes. **Não trocar,
 | Bandeja Alongada com Porta-Velas | As fotos isoladas 3 e 6 não atendem ao padrão. Os originais recuperados com os dois componentes juntos mostram vela LED e/ou outras peças, sem duas vistas adequadas confirmadas da oferta individual. | Suspender a seleção e o cadastro definitivo. Obter duas imagens do conjunto completo, ou verificar uma separação fiel e apresentar novo resultado antes de aprovação. Não editar por geração/reconstrução de áreas ocultas. |
 
 A auditoria é visual, não comprova que a fonte seja fotografia física em vez de renderização, nem licença comercial. Não houve edição das imagens, alteração do cadastro definitivo ou publicação nesta revisão.
+
+### Critério estrito de seleção e situação atual — 26/10/2026
+
+Fotos com outros produtos são referências de avaliação, **não seleções finais**: não apresentá-las como candidatas aprováveis nem usá-las para completar a galeria. Só apresentar como final uma dupla que atenda a todos os critérios acima. Recorte ou edição fiel só é aceitável mantendo o conjunto completo e as características reais; quando objetos encobrem partes da peça, não inventar o que está por baixo. Se não for possível obter duas fotos corretas, declarar a dificuldade e manter o novo produto pendente.
+
+Nos originais já conferidos das bandejas, os acessórios nas vistas superiores sobrepõem-se ao interior. Um recorte não os remove mantendo a peça completa; preencher a área exigiria inventar detalhes encobertos. Não existe dupla final adequada selecionada para a Alongada e não há substituição aprovada para a Cruz. Nenhuma edição foi produzida. Manter Alongada pendente, Cruz inalterada e as cinco fotos aprovadas da Pomba da Paz intactas. Aguardar novas fotografias reais adequadas ou outra fonte original verificável, e apresentar o resultado final ao usuário antes de publicar.
