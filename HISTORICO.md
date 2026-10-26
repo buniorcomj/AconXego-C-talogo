@@ -90,3 +90,7 @@ Commit `d6ac145` enviado e confirmado na main do GitHub. Vercel concluída: http
 ## 26/10/2026 — início da conferência da Sagrada Família
 
 Novo link `the-holy-family` recebido. Onze imagens da galeria e capa oficial como número 12 recuperadas publicamente e conferidas; nenhuma excluída, recortada ou editada. Aguardando seleção do usuário. Nenhum produto ou imagem existente alterado; cadastro definitivo e site continuam com três produtos e onze imagens. Apenas registro local da conferência, sem push/deploy nesta etapa.
+
+## 26/10/2026 — seleção da Sagrada Família
+
+Usuário excluiu da seleção 6, 7, 8, 9, 10, 11 e 12. Permanecem 1 a 5, com capa 1. Originais preservados; nenhuma edição ou publicação autorizada nesta etapa. Cadastro definitivo e produtos já publicados não foram alterados.

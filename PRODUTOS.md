@@ -170,3 +170,7 @@ O usuário retirou também **8, 9, 10 e 11**. Exclusões acumuladas: **2, 3, 7, 
 ### Novo produto em conferência — Sagrada Família (26/10/2026)
 
 Recebida página original `the-holy-family`; recuperados onze arquivos da galeria na ordem original (1–11) e capa oficial (12), sem descarte ou edição. Nome comercial proposto: Sagrada Família. Categoria Religiosos; subcategoria proposta Imagens religiosas grandes, ainda a confirmar com a loja. Nenhuma dimensão foi publicada como especificação comercial. O usuário deve escolher os números antes de qualquer tratamento. Rascunho e mapa completo local em `internal/holy-family-review/`; origem permanece fora do conteúdo público. Sem cadastro definitivo, commit de imagens ou publicação até aprovação. Todos os três produtos já publicados permanecem intactos.
+
+### Seleção da Sagrada Família — 26/10/2026
+
+Usuário retirou **6, 7, 8, 9, 10, 11 e 12** da seleção. Manter **1, 2, 3, 4 e 5**, com **imagem 1 como capa/principal** e ordem original na galeria. Não renumerar nem apagar originais. Sem autorização de edição ou publicação nesta escolha; aguardar publicação expressamente autorizada. Seleção salva no rascunho local `internal/holy-family-review/product-draft.json`. Catálogo existente permanece intacto.
