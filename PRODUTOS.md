@@ -116,7 +116,15 @@ Aplicar o padrão aos próximos produtos e auditar os existentes. **Não trocar,
 | Produto | Conferência | Ação |
 | --- | --- | --- |
 | Bandeja Cruz com Porta-Velas | Duas fotos, mas a secundária mostra somente a bandeja; não mostra o conjunto completo em ambas. A principal também mostra vela LED, cuja inclusão comercial não foi confirmada. | Preservar as duas fotos aprovadas. Solicitar duas vistas reais adequadas e aprovação antes de qualquer troca. |
-| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. As fotos 1 e 2 são candidatas para uma futura seleção de duas. | Preservar as cinco atuais. Redução para duas depende de autorização específica; não apagar arquivos. |
+| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. O usuário determinou manter todas as cinco. | Manter as cinco sem alterações; padrão de duas fotos aplica-se aos novos produtos, sem exclusão automática de fotos já aprovadas. |
 | Bandeja Alongada com Porta-Velas | As fotos isoladas 3 e 6 não atendem ao padrão. Os originais recuperados com os dois componentes juntos mostram vela LED e/ou outras peças, sem duas vistas adequadas confirmadas da oferta individual. | Suspender a seleção e o cadastro definitivo. Obter duas imagens do conjunto completo, ou verificar uma separação fiel e apresentar novo resultado antes de aprovação. Não editar por geração/reconstrução de áreas ocultas. |
 
 A auditoria é visual, não comprova que a fonte seja fotografia física em vez de renderização, nem licença comercial. Não houve edição das imagens, alteração do cadastro definitivo ou publicação nesta revisão.
+
+## Revisão de fontes e recortes — 26/10/2026
+
+Acesso público refeito: galeria da Bandeja Cruz com nove imagens e da Alongada com dez, sem fotos novas; miniaturas oficiais também conferidas. A vista em perspectiva/superior da Cruz com os dois componentes contém uma pomba apoiada na bandeja e uma vela LED. A vista superior da Alongada com os dois componentes contém outras imagens religiosas e vela LED. As miniaturas repetem a vista principal e não fornecem outro ângulo adequado.
+
+Avaliação de recorte: as peças extras sobrepõem-se ao interior das bandejas. Um corte retangular que as elimine excluiria partes da bandeja/conjunto completo; sua remoção por preenchimento exigiria recriar áreas encobertas. Não foi feito recorte, montagem ou edição por geração. Não há nova fotografia selecionada para substituição da Cruz nem duas fotos adequadas confirmadas para cadastrar a Alongada. Os originais e todas as candidatas anteriores permanecem preservados. Obter fotografias reais do conjunto completo em dois ângulos, ou outra fonte original adequada, antes de propor publicação.
+
+A Pomba da Paz permanece com as cinco fotografias aprovadas, por instrução expressa do usuário. Nenhum produto ou fotografia foi alterado no push da organização. Apenas os dois produtos ativos e sete imagens aprovadas entram em dist.

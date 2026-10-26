@@ -2,7 +2,7 @@
 
 Projeto existente Vercel: **`acon-xego/aconxegocatalogo`**. Repositório: **`buniorcomj/AconXego-C-talogo`**. URL: **https://aconxegocatalogo.vercel.app**.
 
-Ler PROJETO.md, INSTRUCOES_CODEX.md, PRODUTOS.md e HISTORICO.md antes de mudar arquivos ou publicar. Main está ligada à implantação automática: o push precisa de autorização no escopo atual. A organização v0.4.0 aguarda revisão antes do push; a publicação v0.3.0 deve permanecer intacta até lá.
+Ler PROJETO.md, INSTRUCOES_CODEX.md, PRODUTOS.md e HISTORICO.md antes de mudar arquivos ou publicar. Main está ligada à implantação automática: o push precisa de autorização no escopo atual. A organização e as regras até v0.5.0 foram autorizadas, enviadas e verificadas em 26/10/2026 (commit funcional 82978c3). Os dois produtos e sete imagens aprovadas permanecem preservados; novas mudanças de fotografias exigem aprovação.
 
 ## Configuração esperada
 

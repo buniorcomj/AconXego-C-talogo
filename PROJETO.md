@@ -1,6 +1,6 @@
 # AconXego — continuidade do projeto
 
-Atualizado em 26/10/2026 (America/Sao_Paulo). Versão publicada de referência: **v0.3.0**, commit `9745c61`. Organização **v0.4.0 preparada localmente, sem push/publicação**; consultar HISTORICO.md para atualizações.
+Atualizado em 26/10/2026 (America/Sao_Paulo). Organização e regras **v0.5.0 publicadas**, commit funcional `82978c3`, com os dois produtos e as sete imagens da v0.3.0 preservados. Implantação e URL pública verificadas em 26/10/2026; consultar HISTORICO.md para atualizações.
 
 ## Identidade e objetivo
 
@@ -71,7 +71,7 @@ As sete imagens aprovadas e seus metadados necessários estão versionados, perm
 6. Informar as alterações e obter autorização antes de push que publique ou deploy. Aprovações passadas não são autorização permanente para mudanças futuras.
 7. Após autorização, enviar ao repositório existente, acompanhar a Vercel e validar a URL pública. Registrar o resultado, sem confundir testes locais com implantação concluída.
 
-Publicação atual deve continuar intacta enquanto esta organização aguarda revisão. Não aplicar reset, force push, exclusões ou reconstrução do projeto para “limpar” histórico.
+A organização foi autorizada e enviada; produtos e fotografias da publicação devem continuar intactos até autorização específica de mudança. Não aplicar reset, force push, exclusões ou reconstrução do projeto para “limpar” histórico.
 
 ## Organização religiosa e evolução — decisão de 26/10/2026
 
@@ -92,7 +92,7 @@ Um futuro kit só existirá mediante cadastro explícito de produto `tipo: "kit"
 
 Próximo item em conferência: **Bandeja Alongada com Porta-Velas**, em Porta-terços, bandejas e porta-velas. Rascunho e fontes locais em `internal/elongated-tray-review/product-draft.json`; propostas WebP preservadas em `demo/assets/`, suspensas pelo novo padrão de duas fotos do conjunto completo e fora do cadastro definitivo e de `dist`. Não publicar nem incluir em kit até aprovação. Arquivos ignorados de conferência não estão no GitHub; após aprovação, promover o registro e imagens necessários para o cadastro versionado.
 
-As regras desta etapa e a organização v0.4.0 continuam preparadas localmente enquanto o envio à main aguarda autorização; não confundir commits locais com persistência remota.
+As regras e a organização foram enviadas à main com autorização expressa e persistência remota verificada. Novas fotografias continuam aguardando aprovação; não confundir autorização de documentação com autorização de alterar a vitrine.
 
 ## Padrão fotográfico vigente — duas fotografias do produto completo
 
@@ -128,7 +128,7 @@ Aplicar o padrão aos próximos produtos e auditar os existentes. **Não trocar,
 | Produto | Conferência | Ação |
 | --- | --- | --- |
 | Bandeja Cruz com Porta-Velas | Duas fotos, mas a secundária mostra somente a bandeja; não mostra o conjunto completo em ambas. A principal também mostra vela LED, cuja inclusão comercial não foi confirmada. | Preservar as duas fotos aprovadas. Solicitar duas vistas reais adequadas e aprovação antes de qualquer troca. |
-| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. As fotos 1 e 2 são candidatas para uma futura seleção de duas. | Preservar as cinco atuais. Redução para duas depende de autorização específica; não apagar arquivos. |
+| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. O usuário determinou manter todas as cinco. | Manter as cinco sem alterações; padrão de duas fotos aplica-se aos novos produtos, sem exclusão automática de fotos já aprovadas. |
 | Bandeja Alongada com Porta-Velas | As fotos isoladas 3 e 6 não atendem ao padrão. Os originais recuperados com os dois componentes juntos mostram vela LED e/ou outras peças, sem duas vistas adequadas confirmadas da oferta individual. | Suspender a seleção e o cadastro definitivo. Obter duas imagens do conjunto completo, ou verificar uma separação fiel e apresentar novo resultado antes de aprovação. Não editar por geração/reconstrução de áreas ocultas. |
 
 A auditoria é visual, não comprova que a fonte seja fotografia física em vez de renderização, nem licença comercial. Não houve edição das imagens, alteração do cadastro definitivo ou publicação nesta revisão.

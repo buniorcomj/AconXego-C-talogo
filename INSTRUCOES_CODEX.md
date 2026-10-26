@@ -107,7 +107,11 @@ Aplicar o padrão aos próximos produtos e auditar os existentes. **Não trocar,
 | Produto | Conferência | Ação |
 | --- | --- | --- |
 | Bandeja Cruz com Porta-Velas | Duas fotos, mas a secundária mostra somente a bandeja; não mostra o conjunto completo em ambas. A principal também mostra vela LED, cuja inclusão comercial não foi confirmada. | Preservar as duas fotos aprovadas. Solicitar duas vistas reais adequadas e aprovação antes de qualquer troca. |
-| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. As fotos 1 e 2 são candidatas para uma futura seleção de duas. | Preservar as cinco atuais. Redução para duas depende de autorização específica; não apagar arquivos. |
+| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. O usuário determinou manter todas as cinco. | Manter as cinco sem alterações; padrão de duas fotos aplica-se aos novos produtos, sem exclusão automática de fotos já aprovadas. |
 | Bandeja Alongada com Porta-Velas | As fotos isoladas 3 e 6 não atendem ao padrão. Os originais recuperados com os dois componentes juntos mostram vela LED e/ou outras peças, sem duas vistas adequadas confirmadas da oferta individual. | Suspender a seleção e o cadastro definitivo. Obter duas imagens do conjunto completo, ou verificar uma separação fiel e apresentar novo resultado antes de aprovação. Não editar por geração/reconstrução de áreas ocultas. |
 
 A auditoria é visual, não comprova que a fonte seja fotografia física em vez de renderização, nem licença comercial. Não houve edição das imagens, alteração do cadastro definitivo ou publicação nesta revisão.
+
+## Situação confirmada após o push autorizado de 26/10/2026
+
+Organização/documentação enviada à main até `82978c3`; GitHub confirmou os arquivos pelos hashes e a Vercel concluiu a implantação. URL HTTPS verificada com dois produtos e sete fotos preservadas. Novas fotos não foram publicadas. Manter as cinco da Pomba da Paz, conforme instrução expressa, sem redução automática. A revisão de fontes/recortes das bandejas está em PRODUTOS.md; não há nova seleção adequada confirmada e a Alongada permanece bloqueada. Pedir aprovação antes de qualquer mudança na vitrine.
