@@ -73,6 +73,41 @@ Todo produto conserva ID próprio, categoria, subcategoria, fotografias e campos
 
 Há rascunho da Bandeja Alongada com Porta-Velas aguardando conferência em `internal/elongated-tray-review/product-draft.json`; não promover à publicação sem aprovação. Preservar também os commits locais da organização ainda não enviados. Antes de push, apresentar o conjunto completo de commits pendentes, não apenas o novo produto.
 
-## Conferência final de fotografias de produtos individuais
+## Padrão fotográfico vigente — duas fotografias do produto completo
 
-Mostrar somente componentes da oferta individual. Para a Bandeja Alongada: somente bandeja e porta-velas, sem vela LED, imagens religiosas, terços ou acessórios. Preferir originais isolados, sem inventar áreas encobertas ou alterar a peça. Não montar kits a partir de fotos de ambientação. A seleção anterior com vela foi revista: originais 3 e 6 da galeria, convertidos em `bandeja-alongada-bandeja.webp` e `bandeja-alongada-porta-velas.webp`, aguardam aprovação final antes de push/publicação. Ver PROJETO.md e PRODUTOS.md. Não alterar produtos já publicados retroativamente sem instrução.
+Decisão de 26/10/2026, posterior à proposta de fotos separadas. **Esta regra substitui qualquer orientação anterior de usar uma foto de cada componente.** A proposta de bandeja sozinha + porta-velas sozinho não atende ao padrão e está suspensa. O histórico das propostas anteriores permanece em HISTORICO.md.
+
+**Padrão inicial: duas fotografias por produto.**
+
+1. **Foto principal:** produto inteiro, com todos os componentes incluídos na venda.
+2. **Foto secundária:** o mesmo produto inteiro, com os mesmos componentes, em outro ângulo real.
+
+### Bandejas com porta-velas
+
+Mostrar bandeja e porta-velas **juntos em ambas as fotos**. Priorizar uma vista frontal/em perspectiva e outra superior. Não substituir por uma fotografia somente da bandeja e outra somente do porta-velas. Para a Bandeja Alongada, a composição individual é somente bandeja e porta-velas: sem imagens religiosas, terços, vela LED ou outros acessórios não incluídos na oferta.
+
+Remover visualmente outros produtos da composição original somente se for possível preservar fielmente as peças reais, sem mudar cores, proporções, formato, textura, detalhes ou acessórios próprios. Preferir originais adequados. Uma separação/corte não pode esconder componentes incluídos ou inventar áreas encobertas. Não reconstruir partes ocultas, simular novo ângulo, gerar fotografia fictícia, fazer composição que sugira foto original ou usar imagem de produto semelhante. Se a remoção exigir inventar características da peça, parar e informar a limitação; solicitar originais adequados ou uma alternativa expressamente aprovada.
+
+### Estátuas e imagens religiosas
+
+Duas fotos da mesma peça completa, a primeira mostrando-a inteira e a segunda em outro ângulo real. Preservar cores, proporções, detalhes e acessórios originais. Não preencher a quantidade com fotos técnicas, imagens de outros modelos ou vistas inventadas.
+
+### Kits futuros
+
+Cada uma das duas fotografias deve mostrar **a composição completa aprovada**: todos os produtos do kit juntos, em vistas reais diferentes. Não usar fotos avulsas dos componentes para simular a composição nem criar kits automaticamente. Combinações, fotografias e preços continuam sujeitos à definição e aprovação do usuário.
+
+### Aprovação e exceções existentes
+
+Antes de cadastrar definitivamente ou publicar um novo produto, verificar que há duas fotografias originais adequadas, apresentar os arquivos finais por links acessíveis e aguardar aprovação. Se não houver, avisar antes do cadastro; manter apenas rascunho bloqueado. Não completar a galeria com imagens inadequadas para atingir duas. Conversão WebP é preparação de arquivo, não aprovação visual nem licença comercial.
+
+Aplicar o padrão aos próximos produtos e auditar os existentes. **Não trocar, editar, retirar ou reduzir fotografias já aprovadas sem nova autorização específica.** Produtos antigos podem conservar temporariamente sua seleção aprovada, registrando a divergência; não impor limite automático de duas fotos que retire imagens antigas. Conservar fotos e dados anteriores, inclusive propostas não utilizadas, sem apagá-los para adequar a quantidade.
+
+### Auditoria atual (sem alteração de produto ou imagem)
+
+| Produto | Conferência | Ação |
+| --- | --- | --- |
+| Bandeja Cruz com Porta-Velas | Duas fotos, mas a secundária mostra somente a bandeja; não mostra o conjunto completo em ambas. A principal também mostra vela LED, cuja inclusão comercial não foi confirmada. | Preservar as duas fotos aprovadas. Solicitar duas vistas reais adequadas e aprovação antes de qualquer troca. |
+| Pomba da Paz | Cinco fotos aprovadas da mesma peça inteira, em ângulos reais disponíveis. As fotos 1 e 2 são candidatas para uma futura seleção de duas. | Preservar as cinco atuais. Redução para duas depende de autorização específica; não apagar arquivos. |
+| Bandeja Alongada com Porta-Velas | As fotos isoladas 3 e 6 não atendem ao padrão. Os originais recuperados com os dois componentes juntos mostram vela LED e/ou outras peças, sem duas vistas adequadas confirmadas da oferta individual. | Suspender a seleção e o cadastro definitivo. Obter duas imagens do conjunto completo, ou verificar uma separação fiel e apresentar novo resultado antes de aprovação. Não editar por geração/reconstrução de áreas ocultas. |
+
+A auditoria é visual, não comprova que a fonte seja fotografia física em vez de renderização, nem licença comercial. Não houve edição das imagens, alteração do cadastro definitivo ou publicação nesta revisão.
