@@ -1,0 +1,287 @@
+[
+  {
+    "arquivo": "internal/elongated-tray-review/galeria-completa.json",
+    "bytes": 2346,
+    "sha256": "b5e1c7a49cfaa07fd96994334732d71f570c2cb8e75edc8827a069aec60fc48a"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-01.png",
+    "bytes": 131546,
+    "sha256": "c5172a550c9a1eec9c8a3aabcf0f15a513e304ad1b951af874fa197fb142e719"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-02.png",
+    "bytes": 195471,
+    "sha256": "87cd89b721e6aacfa3d5d89e481c94b69096a40712d6f87c4ecdca21ce40ba42"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-03.png",
+    "bytes": 100342,
+    "sha256": "93eabc152ca0861789c8a099efd12b991c55f420ac3dd809f2cfc7a8de51089f"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-04.png",
+    "bytes": 81674,
+    "sha256": "b130296730257372dec283ff75cbe3f9d9a6f560eff91409b01b6195cc9a79b2"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-05.png",
+    "bytes": 254263,
+    "sha256": "07b0632303ae863a8bdff2a0a518dca641c9175ade0ec5b484d6227e274ac8ed"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-06.png",
+    "bytes": 302191,
+    "sha256": "6be79e0a6c93c75a48a616160916b359422b74d26988ef380f9a776cf2d2e4ad"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-07.png",
+    "bytes": 254116,
+    "sha256": "e3f8a000dc0f6e3cf7b8ba2b5b3f48f61c61fa70c4c414e82bda7ad93c669a11"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-08.png",
+    "bytes": 255151,
+    "sha256": "ac9c06795517b4ac53fd1cf01df412434a27053a62095b4bda526a18fc0b6b4f"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-09.png",
+    "bytes": 67570,
+    "sha256": "0e138486a864f4cd1634a841c39f563d4d98ff943dda276531ef227584347324"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-10.png",
+    "bytes": 57685,
+    "sha256": "360220842eaf82e43b0cc061fbf274b9ad0c712aa8e47226166bf6e672b45653"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/original-11-capa.png",
+    "bytes": 125471,
+    "sha256": "7375604c2e2e98a3d0cfef5058405a053118c0e3184a582711b54568aed323cf"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/product-draft.json",
+    "bytes": 4984,
+    "sha256": "3db7fc1b9b813b2347203853f702acdd0a014d0ad2809a5225be3754bcb19d43"
+  },
+  {
+    "arquivo": "internal/elongated-tray-review/source-data.json",
+    "bytes": 3310,
+    "sha256": "5beec7c8338a484c7f4a49aa91510da0c23fc4589d13d7a2186e27f6fbd43f05"
+  },
+  {
+    "arquivo": "internal/holy-family-review/galeria-completa.json",
+    "bytes": 3563,
+    "sha256": "b08928b181284dce962396c467b5e5cab95f28458c7add5990396dd7ebe3d97b"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-01.png",
+    "bytes": 386329,
+    "sha256": "ae245ef9b7df4eea4f005324ca6f1ec971a09d4954ccf005dd915f81ee390062"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-02.png",
+    "bytes": 381639,
+    "sha256": "e1ef4294509c29305c86f69129c49c1ff00069aafcf5aad7b91311056581d7ab"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-03.png",
+    "bytes": 1032267,
+    "sha256": "5c1af07bda4a8e4ad213b1670c5af001451e010f39821466d64f7c4979446075"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-04.png",
+    "bytes": 358995,
+    "sha256": "ac354931e8579f9e946a53e915a08ec247df70b237419e12885eb6371e5c226f"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-05.png",
+    "bytes": 324877,
+    "sha256": "1c634eb95a87b584d779452ef268b37aacc2df8722a748c408376b186ce51b64"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-06.png",
+    "bytes": 441693,
+    "sha256": "5ac7f0f27ea16efbd7052bc7e2e7da8e07c6a8043c8faa9dbb6c9aa41fa9833a"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-07.png",
+    "bytes": 210969,
+    "sha256": "9d55dc07ba3d605b75a8585a41ab1416db0d9ac3d41a2441192b873896a24b69"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-08.png",
+    "bytes": 234264,
+    "sha256": "7e376e9dd866c10fb53084f9714025555d465843c8f879f8c35bf2ea49f76857"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-09.png",
+    "bytes": 206035,
+    "sha256": "71008824e5a96e4e805674c5f83b492e96153bb1880ad39b7d6bd761ea2ba713"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-10.png",
+    "bytes": 176089,
+    "sha256": "2a46636fcd9dbad2b4cc10a1fa90f9499c509707a87faf4d47938a8330664a50"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-11.png",
+    "bytes": 178585,
+    "sha256": "4170dfd203f157ff8f0c6808b2269eeb24c4973f423a228520115254b94aa4ec"
+  },
+  {
+    "arquivo": "internal/holy-family-review/original-12.png",
+    "bytes": 260080,
+    "sha256": "b5bed171a9545185fd7d360e975f1f41e72b097e5064e388be686c36cbf72760"
+  },
+  {
+    "arquivo": "internal/holy-family-review/product-draft.json",
+    "bytes": 790,
+    "sha256": "5ec2c824073c275ab9adca5f4747bea566af13f7b3af23f15d02fbb7bc77586f"
+  },
+  {
+    "arquivo": "internal/holy-family-review/source-data.json",
+    "bytes": 4156,
+    "sha256": "f57ffc0b0ca2e4cf3a6e0732d27929aae8e81d5aa8757aa1257ad3ec36442331"
+  },
+  {
+    "arquivo": "internal/image-review/LEIA-ME.md",
+    "bytes": 2283,
+    "sha256": "8d8a3193e73a9b8f10b51b197624226caa3121813fb11a4aa4682ddac439ce4c"
+  },
+  {
+    "arquivo": "internal/image-review/ORIGEM.md",
+    "bytes": 1690,
+    "sha256": "30b1e7f66bef069b50fa680d84d4e6027591e4c51829ee83ac47c48bdf53ef5a"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-01.png",
+    "bytes": 149306,
+    "sha256": "0eea52346870763bd6214312a06b0a3c8f3e5a88aaa1f8fa76a160da6b43778d"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-02.png",
+    "bytes": 252158,
+    "sha256": "f3631df297cab11a61910e1ef2e781c8799f949e3a2770d7ec3ae2361ca1d5d0"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-03.png",
+    "bytes": 247982,
+    "sha256": "bd258f2f4fd3606ea511b8398e9712fae2e5bc1b273e9522b9dc93a6650cad50"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-04.png",
+    "bytes": 235404,
+    "sha256": "d6f44f68e92400b04fe6a40eb5de657fc045661c4b14caa688d97648869712e3"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-05.png",
+    "bytes": 302191,
+    "sha256": "6be79e0a6c93c75a48a616160916b359422b74d26988ef380f9a776cf2d2e4ad"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-06.png",
+    "bytes": 258695,
+    "sha256": "a011337d3d6b0b2c7e731b63a75aab7c9cb954b2de0b38528d620846618130c8"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-07.png",
+    "bytes": 255151,
+    "sha256": "ac9c06795517b4ac53fd1cf01df412434a27053a62095b4bda526a18fc0b6b4f"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-08.png",
+    "bytes": 79104,
+    "sha256": "14330f50ed4e4b1e0aa237f2ececb2a807587c8c8a665478cdaf7357f4c19d60"
+  },
+  {
+    "arquivo": "internal/image-review/bandeja-cruz-09.png",
+    "bytes": 66333,
+    "sha256": "e867c21818af6adcb38072c72ab446b516a49df1dda3105f68c761aee3cafa73"
+  },
+  {
+    "arquivo": "internal/image-review/sources.json",
+    "bytes": 2568,
+    "sha256": "6ee9c0ce707ec7bb152b7edae324d939a560bcfe18b9337f1951205dc4047e9d"
+  },
+  {
+    "arquivo": "internal/makerworld-2113086-review/product-draft.json",
+    "bytes": 1230,
+    "sha256": "ffe651831060a5cb7e0b8f7cc533eb6fc7eace5c5e49ebe3d7657f19f8f0211b"
+  },
+  {
+    "arquivo": "internal/papai-noel-upload-review/product-draft.json",
+    "bytes": 1642,
+    "sha256": "956de08bac66840ed236b48e001d3647f53d5fae0bf39dac548d6b8cc9256815"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-01.png",
+    "bytes": 238950,
+    "sha256": "c2f4d148df47d10d9a6202fd2fc7b0af8a156e6702d21ac668d466cad1a70e4c"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-02.png",
+    "bytes": 269671,
+    "sha256": "0c7554dc21e1c95bb3462475225a7213563b901ae8d31c57f4693c83a4e09f4a"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-03.png",
+    "bytes": 250147,
+    "sha256": "ad2648c093b1162f78d16b9df32b3b6be9a15a261004073a418e324c2878ced7"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-04.png",
+    "bytes": 260622,
+    "sha256": "422f00a38d292060dfb391ebfb3788069a9f2d681fdd3eec5642e923158bcfe8"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-05.png",
+    "bytes": 218551,
+    "sha256": "7f05042740745f92e7b4e31fff28efa3391ceac96c3586528c0e634c6b056948"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/original-06.png",
+    "bytes": 63528,
+    "sha256": "d523beba6532425cf1eb079ea3d16924e0764ecaeb9bc8ebc1df4568bbda7ee5"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/product-draft.json",
+    "bytes": 466,
+    "sha256": "a7195da9d3f7e62f57ea0f466bea35b0d3868622136c5fc7dece6999063e946a"
+  },
+  {
+    "arquivo": "internal/peace-dove-review/source-data.json",
+    "bytes": 1953,
+    "sha256": "7dc7b654dad4f9950f78a9c4c66e18f136a95201ac9ec8ff924ad5d5d76b195d"
+  },
+  {
+    "arquivo": "demo/assets/bandeja-alongada-bandeja.webp",
+    "bytes": 89418,
+    "sha256": "4b5c819966ae1246c5ab4cb7439b3fcfa09ae7b5d323ecb38bd4df1309dc839a"
+  },
+  {
+    "arquivo": "demo/assets/bandeja-alongada-porta-velas.webp",
+    "bytes": 261894,
+    "sha256": "9d0b4f3136e8b923bd3adbd3c9034104cf5abbc162edcc0108be63a8118c801f"
+  },
+  {
+    "arquivo": "demo/assets/bandeja-alongada-principal.webp",
+    "bytes": 117530,
+    "sha256": "4b58d0b0aa3791a8216efb80d0ad876933dbf050107e4b1b737cf37246953ba5"
+  },
+  {
+    "arquivo": "demo/assets/bandeja-alongada-secundaria.webp",
+    "bytes": 235910,
+    "sha256": "35e3ad14fa7244d3b04aa37db37397d275c9699e59789569ea45c37fbcac6486"
+  },
+  {
+    "arquivo": "demo/assets/bandeja-cruz-original.png",
+    "bytes": 149306,
+    "sha256": "0eea52346870763bd6214312a06b0a3c8f3e5a88aaa1f8fa76a160da6b43778d"
+  },
+  {
+    "arquivo": "internal/planejamento-administrativo/Texto colado.txt",
+    "bytes": 5207,
+    "sha256": "982dde9cb735c5e9d0e17ca03c863d856354cb88d55600ff1b3ee805de6288f6"
+  }
+]
