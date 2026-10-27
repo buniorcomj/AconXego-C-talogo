@@ -1,5 +1,18 @@
 # Produtos AconXego
 
+## Pausa e retomada — 27/10/2026
+
+Este registro é o estado mais recente; referências antigas a etapas pendentes não substituem as aprovações posteriores.
+
+- Publicados e preservados: Bandeja Cruz com Porta-Velas (2 fotos), Bandeja Alongada com Porta-Velas (4), Pomba da Paz (5) e Sagrada Família (5). Total: 4 produtos / 16 fotografias. Site: https://aconxegocatalogo.vercel.app/.
+- Papai Noel permanece rascunho, sem autorização de publicação. Ordem escolhida: fundo branco como principal; ambientação natalina e ambiente de escritório como secundárias. As três imagens são visíveis na conversa, mas seus arquivos originais não foram disponibilizados no ambiente. Não alegar que foram salvos ou convertidos. Próximo passo: receber os originais como anexos de arquivo, preferencialmente ZIP, conferir e converter preservando a qualidade, sem publicar.
+- Referência MakerWorld 2113086 permanece pendente: acesso público consultado retornou HTTP 402, sem fotografias confirmadas; a correspondência com as fotos do Papai Noel não foi verificada. Não contornar bloqueios.
+- Painel administrativo, Supabase, banco e login adiados. Continuar pelo Codex, priorizando religiosos e depois natalinos; preservar categorias e preparação para kits, sem criar combinações ou preços automaticamente.
+- Fotografias por link ou upload são equivalentes; aceitar fundos brancos e ambientados, sem quantidade fixa. Apresentar todos os originais numerados, aguardar escolha e autorização de publicação. Não modificar produtos ou imagens já aprovados.
+- Backup de revisão: branch `backup/pausa-2026-10-27`, arquivo `backup/rascunhos-2026-10-27.tar.gz`, manifesto SHA-256 e instruções no README da pasta. Inclui os originais locais de revisão, rascunhos, propostas anteriores e texto do planejamento administrativo. Não inclui os três originais indisponíveis do Papai Noel. Não mesclar essa branch na main: contém material de revisão e configuração que desativa deploys nela.
+- Para retomar em outro computador: clonar o mesmo repositório, ler estes documentos e AGENTS.md, buscar a branch de backup e recuperar o arquivo por `git show origin/backup/pausa-2026-10-27:backup/rascunhos-2026-10-27.tar.gz > /tmp/aconxego-rascunhos.tar.gz`. Conferir o manifesto antes de extrair na raiz do checkout. Não depender do histórico do chat ou do disco desta sessão.
+- Autorização desta pausa: salvar documentação na main e rascunhos na branch de backup, sem novos produtos ou fotografias na vitrine. A main pode disparar implantação automática, mas cadastro, templates, imagens aprovadas e configuração de produção permanecem intactos.
+
 ## Regras vigentes de fotografias — fontes equivalentes e quantidade livre
 
 Decisão de 26/10/2026, posterior aos critérios de duas fotos. **Esta seção substitui todas as instruções anteriores que imponham quantidade fixa, priorizem importação por link ou recusem fotos ambientadas.** Registros antigos permanecem como histórico, sem prevalecer sobre estas regras.
